@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 9d7727f5cb362ce41ab3123148f74b2c
+timeCreated: 1507211231
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bone001_Arm
+    100002: Bone002_Hand
+    100004: Bone003_Paw
+    100006: Bone009_Finger
+    100008: Bone013_Finger
+    100010: Bone014_Finger
+    100012: Bone015_Finger
+    100014: Bone018_Leg
+    100016: Bone019_Shin
+    100018: Bone020_Foot
+    100020: Bone021_MASS
+    100022: Bone022_Stum
+    100024: Bone023_Chest
+    100026: Bone024_Neck
+    100028: Bone025_Head
+    100030: Bone026_Arm
+    100032: Bone026_Jaw
+    100034: Bone027_Hand
+    100036: Bone028_Paw
+    100038: Bone029_Finger
+    100040: Bone030_Finger
+    100042: Bone031_Finger
+    100044: Bone032_Finger
+    100046: Bone033_Leg
+    100048: Bone034_Shin
+    100050: Bone035_Foot
+    100052: Dummy001
+    100054: Dummy002
+    100056: Dummy003
+    100058: Dummy004
+    100060: Dummy005
+    100062: Dummy006
+    100064: Dummy007
+    100066: Dummy008
+    100068: Dummy009
+    100070: Dummy010_HandL
+    100072: Dummy010_HandR
+    100074: Dummy010_Heat
+    100076: IK Chain001
+    100078: IK Chain002
+    100080: IK Chain003
+    100082: IK Chain004
+    100084: Zombee_01
+    100086: //RootNode
+    400000: Bone001_Arm
+    400002: Bone002_Hand
+    400004: Bone003_Paw
+    400006: Bone009_Finger
+    400008: Bone013_Finger
+    400010: Bone014_Finger
+    400012: Bone015_Finger
+    400014: Bone018_Leg
+    400016: Bone019_Shin
+    400018: Bone020_Foot
+    400020: Bone021_MASS
+    400022: Bone022_Stum
+    400024: Bone023_Chest
+    400026: Bone024_Neck
+    400028: Bone025_Head
+    400030: Bone026_Arm
+    400032: Bone026_Jaw
+    400034: Bone027_Hand
+    400036: Bone028_Paw
+    400038: Bone029_Finger
+    400040: Bone030_Finger
+    400042: Bone031_Finger
+    400044: Bone032_Finger
+    400046: Bone033_Leg
+    400048: Bone034_Shin
+    400050: Bone035_Foot
+    400052: Dummy001
+    400054: Dummy002
+    400056: Dummy003
+    400058: Dummy004
+    400060: Dummy005
+    400062: Dummy006
+    400064: Dummy007
+    400066: Dummy008
+    400068: Dummy009
+    400070: Dummy010_HandL
+    400072: Dummy010_HandR
+    400074: Dummy010_Heat
+    400076: IK Chain001
+    400078: IK Chain002
+    400080: IK Chain003
+    400082: IK Chain004
+    400084: Zombee_01
+    400086: //RootNode
+    4300000: Zombee_01
+    7400000: Zombie_Idle_01
+    7400002: Zombie_Walk_01
+    7400004: Zombie_Attack_01
+    7400006: Zombie_Death_01
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Zombee_01
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Zombie_Idle_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Dummy008
+        weight: 1
+      - path: Dummy001/IK Chain002
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy002/Dummy009
+        weight: 1
+      - path: Dummy002/IK Chain001
+        weight: 1
+      - path: Dummy003
+        weight: 1
+      - path: Dummy003/Dummy007
+        weight: 1
+      - path: Dummy003/IK Chain003
+        weight: 1
+      - path: Dummy004
+        weight: 1
+      - path: Dummy004/Dummy006
+        weight: 1
+      - path: Dummy004/IK Chain004
+        weight: 1
+      - path: Dummy005
+        weight: 1
+      - path: Dummy005/Bone021_MASS
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin/Bone020_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone009_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone013_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone014_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone015_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Dummy010_HandR
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Bone026_Jaw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Dummy010_Heat
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone029_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone030_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone031_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone032_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Dummy010_HandL
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin/Bone035_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Zombee_01
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Zombie_Walk_01
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 145
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Dummy008
+        weight: 1
+      - path: Dummy001/IK Chain002
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy002/Dummy009
+        weight: 1
+      - path: Dummy002/IK Chain001
+        weight: 1
+      - path: Dummy003
+        weight: 1
+      - path: Dummy003/Dummy007
+        weight: 1
+      - path: Dummy003/IK Chain003
+        weight: 1
+      - path: Dummy004
+        weight: 1
+      - path: Dummy004/Dummy006
+        weight: 1
+      - path: Dummy004/IK Chain004
+        weight: 1
+      - path: Dummy005
+        weight: 1
+      - path: Dummy005/Bone021_MASS
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin/Bone020_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone009_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone013_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone014_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone015_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Dummy010_HandR
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Bone026_Jaw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Dummy010_Heat
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone029_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone030_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone031_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone032_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Dummy010_HandL
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin/Bone035_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Zombee_01
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Zombie_Attack_01
+      takeName: Take 001
+      firstFrame: 160
+      lastFrame: 210
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Dummy008
+        weight: 1
+      - path: Dummy001/IK Chain002
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy002/Dummy009
+        weight: 1
+      - path: Dummy002/IK Chain001
+        weight: 1
+      - path: Dummy003
+        weight: 1
+      - path: Dummy003/Dummy007
+        weight: 1
+      - path: Dummy003/IK Chain003
+        weight: 1
+      - path: Dummy004
+        weight: 1
+      - path: Dummy004/Dummy006
+        weight: 1
+      - path: Dummy004/IK Chain004
+        weight: 1
+      - path: Dummy005
+        weight: 1
+      - path: Dummy005/Bone021_MASS
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin/Bone020_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone009_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone013_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone014_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone015_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Dummy010_HandR
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Bone026_Jaw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Dummy010_Heat
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone029_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone030_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone031_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone032_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Dummy010_HandL
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin/Bone035_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Zombee_01
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Zombie_Death_01
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 270
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dummy001
+        weight: 1
+      - path: Dummy001/Dummy008
+        weight: 1
+      - path: Dummy001/IK Chain002
+        weight: 1
+      - path: Dummy002
+        weight: 1
+      - path: Dummy002/Dummy009
+        weight: 1
+      - path: Dummy002/IK Chain001
+        weight: 1
+      - path: Dummy003
+        weight: 1
+      - path: Dummy003/Dummy007
+        weight: 1
+      - path: Dummy003/IK Chain003
+        weight: 1
+      - path: Dummy004
+        weight: 1
+      - path: Dummy004/Dummy006
+        weight: 1
+      - path: Dummy004/IK Chain004
+        weight: 1
+      - path: Dummy005
+        weight: 1
+      - path: Dummy005/Bone021_MASS
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone018_Leg/Bone019_Shin/Bone020_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone009_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone013_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone014_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Bone015_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone001_Arm/Bone002_Hand/Bone003_Paw/Dummy010_HandR
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Bone026_Jaw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone024_Neck/Bone025_Head/Dummy010_Heat
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone029_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone030_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone031_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Bone032_Finger
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone022_Stum/Bone023_Chest/Bone026_Arm/Bone027_Hand/Bone028_Paw/Dummy010_HandL
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Bone033_Leg/Bone034_Shin/Bone035_Foot
+        weight: 1
+      - path: Dummy005/Bone021_MASS/Zombee_01
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
