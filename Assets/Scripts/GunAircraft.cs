@@ -13,11 +13,35 @@ public class GunAircraft : MonoBehaviour
 
 	public Camera[] cams;
 
-	// Update is called once per frame
+	private float timeTemp;
+	private bool click;
+	private AudioSource[] audioSources;
+
+	void Start ()
+	{
+		audioSources = GetComponents<AudioSource> ();
+	}
+
 	void Update ()
 	{
 		if (Input.GetButtonDown ("Fire1")) {
+			timeTemp = Time.time;
+			click = true;
+		}
+			
+		// Long click
+		if (click && (Time.time - timeTemp) > 0.2) {
+			audioSources [1].Play ();
 			Shoot ();
+		}
+
+		// Short click
+		if (Input.GetButtonUp ("Fire1")) {
+			click = false;
+			if ((Time.time - timeTemp) < 0.2) {
+				audioSources [0].Play ();
+				Shoot ();
+			}
 		}
 
 		if (Input.GetButtonDown ("Fire2")) {
@@ -33,7 +57,7 @@ public class GunAircraft : MonoBehaviour
 	{
 		RaycastHit hit;
 		if (Physics.Raycast (GetComponent<Camera> ().transform.position, GetComponent<Camera> ().transform.forward, out hit, range)) {
-			ZombieTarget target = hit.transform.GetComponent<ZombieTarget> ();
+			ZombieControl target = hit.transform.GetComponent<ZombieControl> ();
 
 			if (target != null) {
 				target.TakeDamage (damage);
