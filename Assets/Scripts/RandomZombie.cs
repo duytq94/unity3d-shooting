@@ -11,11 +11,17 @@ public class RandomZombie : MonoBehaviour
 	// Model zombie
 	public GameObject modelZombie;
 
+	// Player
+	public GameObject player;
+
+	// Zombie distance at least from player
+	public float distanceFromPlayer = 10f;
+
 	// Density of quantity zombie (0 -> 1)
 	public float density = 0.1f;
 
-	// Radius of Sphere
-	public float radius = 2f;
+	// Radius of Sphere, 2f is quit fit with surround body zombie
+	private float radius = 2f;
 
 	private int maxZombie;
 	private GameObject[] arrayZombie;
@@ -42,9 +48,12 @@ public class RandomZombie : MonoBehaviour
 
 			// <= 1 mean zombie only colliding with ground
 			if (overlapCollider.Length <= 1) {
-				Instantiate (modelZombie, 
-					spawnPosition + transform.TransformPoint (0, 0, 0), 
-					Quaternion.Euler (modelZombie.transform.rotation.x, Random.rotation.y, modelZombie.transform.rotation.z));	
+				// if zombie position too near, we'll not create it
+				if (Vector3.Distance (player.transform.position, spawnPosition) > distanceFromPlayer) {
+					Instantiate (modelZombie, 
+						spawnPosition + transform.TransformPoint (0, 0, 0), 
+						Quaternion.Euler (modelZombie.transform.rotation.x, Random.rotation.y, modelZombie.transform.rotation.z));
+				}
 			}
 		}
 	}
