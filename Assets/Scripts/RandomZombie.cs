@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class RandomZombie : MonoBehaviour
 {
-	// Max and min in axis X and axis Y of ground
-	public Vector3 minEdge;
-	public Vector3 maxEdge;
+	// Plan zombie will born on it
+	public GameObject plan;
 
 	// Model zombie
 	public GameObject modelZombie;
@@ -25,25 +24,27 @@ public class RandomZombie : MonoBehaviour
 
 	private int maxZombie;
 	private GameObject[] arrayZombie;
+	private Bounds bounds;
 
-	// Use this for initialization
 	void Start ()
 	{
-		int width = (int)(maxEdge.x - minEdge.x);
-		int height = (int)(maxEdge.z - minEdge.z);
-		int area = width * height;
+		bounds = plan.GetComponent<Renderer> ().bounds;
+
+		float width = bounds.size.x;
+		float height = bounds.size.z;
+
+		float area = width * height;
 		if (density <= 0 || density > 1) {
 			density = Random.Range (0, 1);
 		}
-		maxZombie = (int)((area / (radius * 10)) * density);
+		maxZombie = (int)((area / (radius * 20)) * density);
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
 		arrayZombie = GameObject.FindGameObjectsWithTag ("Zombie");
 		if (arrayZombie.Length < maxZombie) {
-			Vector3 spawnPosition = new Vector3 ((int)Random.Range (minEdge.x, maxEdge.x), 0, (int)Random.Range (minEdge.z, maxEdge.z));
+			Vector3 spawnPosition = new Vector3 (Random.Range (bounds.min.x, bounds.max.x), 0, Random.Range (bounds.min.z, bounds.max.z));
 			Collider[] overlapCollider = Physics.OverlapSphere (spawnPosition, radius);
 
 			// <= 1 mean zombie only colliding with ground
@@ -51,7 +52,7 @@ public class RandomZombie : MonoBehaviour
 				// if zombie position too near, we'll not create it
 				if (Vector3.Distance (player.transform.position, spawnPosition) > distanceFromPlayer) {
 					Instantiate (modelZombie, 
-						spawnPosition + transform.TransformPoint (0, 0, 0), 
+						spawnPosition, 
 						Quaternion.Euler (modelZombie.transform.rotation.x, Random.rotation.y, modelZombie.transform.rotation.z));
 				}
 			}

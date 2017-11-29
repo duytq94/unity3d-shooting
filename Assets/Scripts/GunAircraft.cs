@@ -15,12 +15,6 @@ public class GunAircraft : MonoBehaviour
 
 	private float timeTemp;
 	private bool click;
-	private AudioSource[] audioSources;
-
-	void Start ()
-	{
-		audioSources = GetComponents<AudioSource> ();
-	}
 
 	void Update ()
 	{
@@ -31,7 +25,7 @@ public class GunAircraft : MonoBehaviour
 			
 		// Long click
 		if (click && (Time.time - timeTemp) > 0.2) {
-			audioSources [1].Play ();
+			FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
 			Shoot ();
 		}
 
@@ -39,7 +33,7 @@ public class GunAircraft : MonoBehaviour
 		if (Input.GetButtonUp ("Fire1")) {
 			click = false;
 			if ((Time.time - timeTemp) < 0.2) {
-				audioSources [0].Play ();
+				FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
 				Shoot ();
 			}
 		}
@@ -74,15 +68,23 @@ public class GunAircraft : MonoBehaviour
 
 	void CamPlayerActive ()
 	{
+		FindObjectOfType<AudioManager> ().Play ("DesertWind");
+		FindObjectOfType<AudioManager> ().Pause ("Helicopter");
+
 		cams [0].GetComponent<Camera> ().enabled = true;
 		cams [1].GetComponent<Camera> ().enabled = false;
+
 		crosshair.SetActive (false);
 	}
 
 	void CamAircraftActive ()
 	{
+		FindObjectOfType<AudioManager> ().Pause ("DesertWind");
+		FindObjectOfType<AudioManager> ().Play ("Helicopter");
+
 		cams [0].GetComponent<Camera> ().enabled = false;
 		cams [1].GetComponent<Camera> ().enabled = true;
+
 		crosshair.SetActive (true);
 	}
 }
