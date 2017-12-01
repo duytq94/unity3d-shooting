@@ -13,9 +13,6 @@ public class Sound
 	[Range (0f, 1f)]
 	public float spatialBlend = 0.8f;
 
-	[Range (0f, 1f)]
-	public float volume = 0.8f;
-
 	// Speed of sound
 	[Range (0f, 2f)]
 	public float pitch = 1f;

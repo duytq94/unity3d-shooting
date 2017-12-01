@@ -289,7 +289,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 533695203}
-  slider: {fileID: 2100247388}
+  sliderLoading: {fileID: 2100247388}
+  sliderVolume: {fileID: 681667688}
   progressText: {fileID: 330239803}
 --- !u!1 &330239801
 GameObject:
@@ -906,7 +907,7 @@ GameObject:
   - component: {fileID: 681667687}
   - component: {fileID: 681667688}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -978,7 +979,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 261408148}
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &712490725
@@ -3059,7 +3071,7 @@ GameObject:
   - component: {fileID: 2100247387}
   - component: {fileID: 2100247388}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SliderLoading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

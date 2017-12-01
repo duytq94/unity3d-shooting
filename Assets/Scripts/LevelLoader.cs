@@ -7,12 +7,31 @@ public class LevelLoader : MonoBehaviour
 {
 
 	public GameObject loadingScreen;
-	public Slider slider;
+	public Slider sliderLoading;
+	public Slider sliderVolume;
 	public Text progressText;
+
+	private string keyVolume = "Volume";
+
+	public void Start ()
+	{
+		if (PlayerPrefs.GetFloat ("Volume", -1f) != -1f) {
+			sliderVolume.value = PlayerPrefs.GetFloat (keyVolume);
+		} else {
+			sliderVolume.value = 0.5f;
+		}
+		AudioListener.volume = sliderVolume.value;
+	}
 
 	public void LoadLevel (string sceneName)
 	{
 		StartCoroutine (LoadAsynchronously (sceneName));
+	}
+
+	public void SetVolume (float volume)
+	{
+		AudioListener.volume = volume;
+		PlayerPrefs.SetFloat (keyVolume, volume);
 	}
 
 	IEnumerator LoadAsynchronously (string sceneName)
@@ -24,7 +43,7 @@ public class LevelLoader : MonoBehaviour
 			// Cause progress just return value form 0 to 0.9, we convert to 0 -> 1
 			float progress = Mathf.Clamp01 (asyncOperation.progress / 0.9f);
 
-			slider.value = progress;
+			sliderLoading.value = progress;
 			progressText.text = string.Format ("{0}%", Mathf.Round (progress * 100f));
 			yield return null;
 		}
