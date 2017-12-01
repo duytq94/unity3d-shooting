@@ -9,6 +9,7 @@ public class ZombieControl : MonoBehaviour
 
 	private GameObject target;
 	private float timeTemp;
+	private bool beAttack = false;
 
 	void Start ()
 	{
@@ -27,14 +28,22 @@ public class ZombieControl : MonoBehaviour
 		transform.rotation = Quaternion.LookRotation (newDir);
 	}
 
-	void OnCollisionEnter (Collision collision)
+	public void OnCollisionEnter (Collision collision)
 	{
 		if (collision.gameObject.tag == "Player") {
 			GetComponentInChildren<Animation> ().Play ("Zombie_Attack_01");
+			beAttack = true;
 		}
 	}
 
-	void OnCollisionExit (Collision collision)
+	public void OnCollisionStay (Collision col)
+	{
+		if (col.gameObject.tag == "Player") {
+			col.gameObject.GetComponent<PlayerGetAttack> ().beAttack (0.05f);
+		}
+	}
+
+	public void OnCollisionExit (Collision collision)
 	{
 		if (collision.gameObject.tag == "Player") {
 			GetComponentInChildren<Animation> ().Play ("Zombie_Walk_01");
