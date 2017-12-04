@@ -23,6 +23,7 @@ public class CharacterController : MonoBehaviour
 			straffe *= Time.deltaTime;
 
 			transform.Translate (straffe, 0, translation);
+
 		}
 	}
 }

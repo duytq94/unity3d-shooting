@@ -17,6 +17,7 @@ public class CamMouseLook : MonoBehaviour
 	void Start ()
 	{
 		character = this.transform.parent.gameObject;
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 	
 	// Update is called once per frame
@@ -34,6 +35,10 @@ public class CamMouseLook : MonoBehaviour
 
 			// Xoay hướng gameObject theo hướng chuột
 			character.transform.localRotation = Quaternion.Euler (-mouseLook.y, mouseLook.x, 0);
+
+//			if (Input.GetKeyDown ("escape")) {
+//				Cursor.lockState = CursorLockMode.None;
+//			}
 		}
 	}
 }

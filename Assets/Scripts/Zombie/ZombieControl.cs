@@ -21,11 +21,12 @@ public class ZombieControl : MonoBehaviour
 	{
 		float step = speed * Time.deltaTime;
 
+		// Move
 		transform.position = Vector3.MoveTowards (transform.position, target.transform.position, step);
 
+		// Rotate
 		Vector3 targetDir = target.transform.position - transform.position;
-		Vector3 newDir = Vector3.RotateTowards (transform.forward, targetDir, step, 0F);
-		transform.rotation = Quaternion.LookRotation (newDir);
+		transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (targetDir), 0.1f);
 	}
 
 	public void OnCollisionEnter (Collision collision)
