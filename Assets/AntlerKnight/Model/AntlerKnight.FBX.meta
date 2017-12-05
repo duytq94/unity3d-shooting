@@ -1,0 +1,2435 @@
+fileFormatVersion: 2
+guid: 9fb3f697c73e7a5418a6ddc31732063f
+timeCreated: 1484921900
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: AntlerKnight
+    100004: Bon_L_thigh
+    100006: Bon_R_thigh
+    100008: Bone_Head
+    100010: Bone_HIP
+    100012: Bone_L_ArmDown
+    100014: Bone_L_ArmUp
+    100016: Bone_L_Fingers
+    100018: Bone_L_Foot
+    100020: Bone_L_Hand
+    100022: Bone_L_Leg
+    100024: Bone_L_Thumb
+    100026: Bone_LowBack
+    100028: Bone_R_ArmDown
+    100030: Bone_R_ArmUp
+    100032: Bone_R_Fingers
+    100034: Bone_R_Foot
+    100036: Bone_R_Hand
+    100038: Bone_R_Leg
+    100040: Bone_R_Thumb
+    100042: Bone_UpBack
+    100044: CTRL_hip
+    100046: CTRL_ROOT
+    100048: CTRL_head
+    100050: CTRL_L_Foot
+    100052: CTRL_L_Foot 1
+    100054: CTRL_R_Foot
+    100056: CTRL_R_Foot 1
+    400000: //RootNode
+    400002: AntlerKnight
+    400004: Bon_L_thigh
+    400006: Bon_R_thigh
+    400008: Bone_Head
+    400010: Bone_HIP
+    400012: Bone_L_ArmDown
+    400014: Bone_L_ArmUp
+    400016: Bone_L_Fingers
+    400018: Bone_L_Foot
+    400020: Bone_L_Hand
+    400022: Bone_L_Leg
+    400024: Bone_L_Thumb
+    400026: Bone_LowBack
+    400028: Bone_R_ArmDown
+    400030: Bone_R_ArmUp
+    400032: Bone_R_Fingers
+    400034: Bone_R_Foot
+    400036: Bone_R_Hand
+    400038: Bone_R_Leg
+    400040: Bone_R_Thumb
+    400042: Bone_UpBack
+    400044: CTRL_hip
+    400046: CTRL_ROOT
+    400048: CTRL_head
+    400050: CTRL_L_Foot
+    400052: CTRL_L_Foot 1
+    400054: CTRL_R_Foot
+    400056: CTRL_R_Foot 1
+    2300000: CTRL_head
+    2300002: CTRL_hip
+    2300004: CTRL_L_Foot
+    2300006: CTRL_L_Foot 1
+    2300008: CTRL_R_Foot
+    2300010: CTRL_R_Foot 1
+    2300012: CTRL_ROOT
+    3300000: CTRL_head
+    3300002: CTRL_hip
+    3300004: CTRL_L_Foot
+    3300006: CTRL_L_Foot 1
+    3300008: CTRL_R_Foot
+    3300010: CTRL_R_Foot 1
+    3300012: CTRL_ROOT
+    4300000: AntlerKnight
+    4300002: CTRL_ROOT
+    4300004: CTRL_hip
+    4300006: CTRL_head
+    4300008: CTRL_R_Foot
+    4300010: CTRL_L_Foot
+    4300012: CTRL_R_Foot
+    4300014: CTRL_L_Foot
+    7400000: Idle1
+    7400002: Attack1
+    7400004: Walk
+    7400006: Run
+    7400008: Idle2
+    7400010: Attack2
+    7400012: Gather
+    7400014: Jab
+    7400016: Wave
+    7400018: Taunt
+    7400020: Radiocall
+    7400022: Peer
+    7400024: LookBehind
+    7400026: FrontRoll
+    7400028: TakeWeaponBack
+    7400030: TakeWeaponSide
+    7400032: KickFront
+    7400034: Jump
+    7400036: HitFromRight
+    7400038: HitFromLeft
+    7400040: Death
+    7400042: AimGun
+    7400044: FireGun
+    7400046: ZombieWalk
+    7400048: ZombieBite
+    9500000: //RootNode
+    13700000: AntlerKnight
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AntlerKnight_mat
+    second: {fileID: 2100000, guid: 121676a1b4ae64e4b883906899f5a448, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 1
+    motionNodeName: <Root Transform>
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Bone_UpBack' has translation animation that
+      will be discarded.\n\t'Bone_Head' has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - CTRL_ROOT/CTRL_hip/Bone_HIP
+    - CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+    - CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+    - CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+    - CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle1
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack1
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 140
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle2
+      takeName: Take 001
+      firstFrame: 270
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack2
+      takeName: Take 001
+      firstFrame: 330
+      lastFrame: 400
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 0
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Gather
+      takeName: Take 001
+      firstFrame: 420
+      lastFrame: 470
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jab
+      takeName: Take 001
+      firstFrame: 480
+      lastFrame: 520
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Wave
+      takeName: Take 001
+      firstFrame: 530
+      lastFrame: 620
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Taunt
+      takeName: Take 001
+      firstFrame: 630
+      lastFrame: 690
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/CTRL_head
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot 1
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot 1
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Radiocall
+      takeName: Take 001
+      firstFrame: 700
+      lastFrame: 760
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/CTRL_head
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot 1
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot 1
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Peer
+      takeName: Take 001
+      firstFrame: 770
+      lastFrame: 860
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/CTRL_head
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot 1
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot 1
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: LookBehind
+      takeName: Take 001
+      firstFrame: 870
+      lastFrame: 930
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/CTRL_head
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot 1
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot 1
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FrontRoll
+      takeName: Take 001
+      firstFrame: 940
+      lastFrame: 980
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/CTRL_head
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot
+        weight: 0
+      - path: CTRL_ROOT/CTRL_R_Foot 1
+        weight: 0
+      - path: CTRL_ROOT/CTRL_L_Foot 1
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TakeWeaponBack
+      takeName: Take 001
+      firstFrame: 1000
+      lastFrame: 1055
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: TakeWeaponSide
+      takeName: Take 001
+      firstFrame: 1060
+      lastFrame: 1100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: KickFront
+      takeName: Take 001
+      firstFrame: 1110
+      lastFrame: 1145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 1150
+      lastFrame: 1215
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HitFromRight
+      takeName: Take 001
+      firstFrame: 1220
+      lastFrame: 1235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: HitFromLeft
+      takeName: Take 001
+      firstFrame: 1235
+      lastFrame: 1250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
+      firstFrame: 1255
+      lastFrame: 1300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: AimGun
+      takeName: Take 001
+      firstFrame: 1315
+      lastFrame: 1345
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FireGun
+      takeName: Take 001
+      firstFrame: 1350
+      lastFrame: 1370
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ZombieWalk
+      takeName: Take 001
+      firstFrame: 1385
+      lastFrame: 1445
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ZombieBite
+      takeName: Take 001
+      firstFrame: 1460
+      lastFrame: 1520
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: AntlerKnight
+        weight: 0
+      - path: CTRL_ROOT
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_R_thigh/Bone_R_Leg/Bone_R_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bon_L_thigh/Bone_L_Leg/Bone_L_Foot
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_L_ArmUp/Bone_L_ArmDown/Bone_L_Hand/Bone_L_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Thumb
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_R_ArmUp/Bone_R_ArmDown/Bone_R_Hand/Bone_R_Fingers
+        weight: 1
+      - path: CTRL_ROOT/CTRL_hip/Bone_HIP/Bone_LowBack/Bone_UpBack/Bone_Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Bone_HIP
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bon_L_thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bon_R_thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_Leg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_Leg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_LowBack
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_UpBack
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_ArmUp
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_ArmUp
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_ArmDown
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_ArmDown
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_Fingers
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_L_Thumb
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_Fingers
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone_R_Thumb
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: AntlerKnight(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: AntlerKnight
+      parentName: AntlerKnight(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_ROOT
+      parentName: AntlerKnight(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_hip
+      parentName: CTRL_ROOT
+      position: {x: 0.0000000020817885, y: 0.033563163, z: 0.640812}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone_HIP
+      parentName: CTRL_hip
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bon_L_thigh
+      parentName: Bone_HIP
+      position: {x: 0.066015474, y: -0.04762577, z: 0.105863646}
+      rotation: {x: 0.7068583, y: 0.07683209, z: 0.009039554, w: 0.703112}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: Bone_L_Leg
+      parentName: Bon_L_thigh
+      position: {x: -0.35625392, y: 0.000000019073486, z: -0.000000009536743}
+      rotation: {x: 0.008957013, y: -0.21743539, z: 0.040172562, w: 0.97520655}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Bone_L_Foot
+      parentName: Bone_L_Leg
+      position: {x: -0.3096064, y: -0.0000022792815, z: -0.000000009536743}
+      rotation: {x: 0.0019076249, y: 0.7942852, z: -0.022953816, w: 0.6071083}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Bone_LowBack
+      parentName: Bone_HIP
+      position: {x: 0.029015502, y: 0.005043845, z: 0}
+      rotation: {x: 0.00000004561369, y: 0.00000004172245, z: 0.99900895, w: 0.04451055}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone_UpBack
+      parentName: Bone_LowBack
+      position: {x: -0.19304244, y: -0.0000000667572, z: 0.0000000012961072}
+      rotation: {x: 0.00000007541936, y: -7.5036827e-10, z: 0.05444742, w: 0.9985167}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Bone_L_ArmUp
+      parentName: Bone_UpBack
+      position: {x: -0.2992508, y: -0.020651164, z: 0.14260864}
+      rotation: {x: -0.4744256, y: 0.52167827, z: 0.51257586, w: 0.48993695}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Bone_L_ArmDown
+      parentName: Bone_L_ArmUp
+      position: {x: -0.26383892, y: 0, z: 1.177068e-10}
+      rotation: {x: 0.001891895, y: 0.04230449, z: -0.037397422, w: 0.99840283}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Bone_L_Hand
+      parentName: Bone_L_ArmDown
+      position: {x: -0.25215542, y: 0.0000003814697, z: -3.6379787e-14}
+      rotation: {x: -0.0458248, y: 0.11709773, z: 0.0841133, w: 0.98849034}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bone_L_Thumb
+      parentName: Bone_L_Hand
+      position: {x: -0.05233627, y: -0.03341372, z: 0.040522}
+      rotation: {x: -0.47283924, y: 0.078986526, z: 0.36577886, w: 0.7977406}
+      scale: {x: 1, y: 0.9999999, z: 0.99999976}
+    - name: Bone_L_Fingers
+      parentName: Bone_L_Hand
+      position: {x: -0.15168442, y: 0, z: 0.0000000028226712}
+      rotation: {x: 0, y: 0, z: 0.3550533, w: 0.93484604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone_Head
+      parentName: Bone_UpBack
+      position: {x: -0.37823662, y: 0.062474374, z: 0.00000007629395}
+      rotation: {x: 0.000000035493514, y: -0.00000008813937, z: -0.04736106, w: 0.9988779}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: Bone_R_ArmUp
+      parentName: Bone_UpBack
+      position: {x: -0.29925087, y: -0.02065123, z: -0.14261001}
+      rotation: {x: 0.48993692, y: 0.5125761, z: 0.5216784, w: -0.47442526}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Bone_R_ArmDown
+      parentName: Bone_R_ArmUp
+      position: {x: -0.2638389, y: -0.000000023841856, z: -0.000000076293944}
+      rotation: {x: -0.0018914926, y: 0.04230461, z: 0.03739772, w: 0.99840283}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: Bone_R_Hand
+      parentName: Bone_R_ArmDown
+      position: {x: -0.25215548, y: -0.00000031948088, z: 0}
+      rotation: {x: 0.21938479, y: 0.026597911, z: -0.21790256, w: 0.95062155}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Bone_R_Thumb
+      parentName: Bone_R_Hand
+      position: {x: -0.05233635, y: 0.033413652, z: 0.04052208}
+      rotation: {x: 0.47283933, y: 0.0789865, z: -0.3657789, w: 0.7977406}
+      scale: {x: 0.99999964, y: 0.9999999, z: 0.99999976}
+    - name: Bone_R_Fingers
+      parentName: Bone_R_Hand
+      position: {x: -0.15168445, y: 0.000000076293944, z: 0.00000015258789}
+      rotation: {x: 0.00000012448228, y: -0.000000047278213, z: -0.35505337, w: 0.93484604}
+      scale: {x: 0.99999976, y: 0.99999964, z: 0.99999994}
+    - name: Bon_R_thigh
+      parentName: Bone_HIP
+      position: {x: 0.066015474, y: -0.04762577, z: -0.10585998}
+      rotation: {x: 0.70328236, y: 0.009017132, z: 0.07685878, w: 0.70668626}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: Bone_R_Leg
+      parentName: Bon_R_thigh
+      position: {x: -0.35625395, y: 0.000000095367426, z: -0.000000047683713}
+      rotation: {x: -0.008957505, y: -0.21743599, z: -0.04017265, w: 0.97520643}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Bone_R_Foot
+      parentName: Bone_R_Leg
+      position: {x: -0.30960628, y: 0.000002298355, z: 0.0000000333786}
+      rotation: {x: -0.0019603472, y: 0.7942853, z: 0.022905974, w: 0.6071099}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000002}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
