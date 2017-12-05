@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamMouseLook : MonoBehaviour
+public class CamMouseLockKnight : MonoBehaviour
 {
-
 	Vector2 mouseLook;
 	Vector2 smoothV;
 	public float sensitivity = 5f;
@@ -16,9 +15,8 @@ public class CamMouseLook : MonoBehaviour
 	void Start ()
 	{
 		character = this.transform.parent.gameObject;
-//		Cursor.lockState = CursorLockMode.Locked;
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -32,12 +30,9 @@ public class CamMouseLook : MonoBehaviour
 			smoothV.y = Mathf.Lerp (smoothV.y, md.y, 1f / smoothing);
 			mouseLook += smoothV;
 
-			// Xoay hướng gameObject theo hướng chuột
-			character.transform.localRotation = Quaternion.Euler (-mouseLook.y, mouseLook.x, 0);
+			transform.localRotation = Quaternion.AngleAxis (-mouseLook.y, Vector3.right);
+			character.transform.localRotation = Quaternion.AngleAxis (mouseLook.x, character.transform.up);
 
-//			if (Input.GetKeyDown ("escape")) {
-//				Cursor.lockState = CursorLockMode.None;
-//			}
 		}
 	}
 }

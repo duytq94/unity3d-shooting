@@ -13,7 +13,7 @@ public class ZombieControl : MonoBehaviour
 
 	void Start ()
 	{
-		target = GameObject.FindGameObjectWithTag ("Player");
+		target = GameObject.FindGameObjectWithTag ("Knight");
 		timeTemp = Time.time;
 	}
 
