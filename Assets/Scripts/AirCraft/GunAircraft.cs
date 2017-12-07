@@ -26,7 +26,7 @@ public class GunAircraft : MonoBehaviour
 			
 			// Long click
 			if (click && (Time.time - timeTemp) > 0.2) {
-				FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
+				FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
 				Shoot ();
 			}
 
@@ -34,17 +34,9 @@ public class GunAircraft : MonoBehaviour
 			if (Input.GetButtonUp ("Fire1")) {
 				click = false;
 				if ((Time.time - timeTemp) < 0.2) {
-					FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
+					FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
 					Shoot ();
 				}
-			}
-		}
-
-		if (Input.GetButtonDown ("Fire2")) {
-			if (cams [1].GetComponent<Camera> ().isActiveAndEnabled) {
-				CamPlayerActive ();
-			} else {
-				CamAircraftActive ();
 			}
 		}
 	}
@@ -66,27 +58,5 @@ public class GunAircraft : MonoBehaviour
 			GameObject impactGO = Instantiate (impactEffect, hit.point, Quaternion.LookRotation (hit.normal));
 			Destroy (impactGO, 0.5f);
 		}
-	}
-
-	void CamPlayerActive ()
-	{
-		FindObjectOfType<AudioManager> ().Play ("DesertWind");
-		FindObjectOfType<AudioManager> ().Pause ("Helicopter");
-
-		cams [0].GetComponent<Camera> ().enabled = true;
-		cams [1].GetComponent<Camera> ().enabled = false;
-
-		crosshair.SetActive (false);
-	}
-
-	void CamAircraftActive ()
-	{
-		FindObjectOfType<AudioManager> ().Pause ("DesertWind");
-		FindObjectOfType<AudioManager> ().Play ("Helicopter");
-
-		cams [0].GetComponent<Camera> ().enabled = false;
-		cams [1].GetComponent<Camera> ().enabled = true;
-
-		crosshair.SetActive (true);
 	}
 }

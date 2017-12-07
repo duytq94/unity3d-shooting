@@ -38,9 +38,9 @@ public class KnightController : MonoBehaviour
 
 			transform.Translate (straffe, 0, translation);
 		
-
 			if (Input.GetButton ("Fire1")) {
 				anim.SetBool ("isAttacking", true);
+				FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.5f);
 			} else {
 				anim.SetBool ("isAttacking", false);
 			}

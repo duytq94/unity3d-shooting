@@ -6,9 +6,12 @@ TagManager:
   tags:
   - Fire
   - Crosshair
-  - Zombie
   - Knight
   - Sword
+  - Skeleton
+  - WrapAircraftCamera
+  - AircraftCamera
+  - GUI
   layers:
   - Default
   - TransparentFX

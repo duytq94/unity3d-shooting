@@ -44,6 +44,7 @@ public class SkeletonController : MonoBehaviour
 			} else {
 				animator.SetBool ("isAttacking", true);
 				animator.SetBool ("isWalking", false);
+				FindObjectOfType<AudioManager> ().PlayDelayed ("SlashEnemy", 1.2f);
 			}
 
 		} else {

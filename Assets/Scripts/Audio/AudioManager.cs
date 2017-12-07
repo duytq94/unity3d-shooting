@@ -46,6 +46,26 @@ public class AudioManager : MonoBehaviour
 		Sound s = Array.Find (sounds, sound => sound.name == name);
 		if (s == null)
 			return;
+		if (!s.source.isPlaying) {
+			s.source.Play ();
+		}
+	}
+
+	public void PlayDelayed (string name, float time)
+	{
+		Sound s = Array.Find (sounds, sound => sound.name == name);
+		if (s == null)
+			return;
+		if (!s.source.isPlaying) {
+			s.source.PlayDelayed (time);
+		}
+	}
+
+	public void PlayCountinuous (string name)
+	{
+		Sound s = Array.Find (sounds, sound => sound.name == name);
+		if (s == null)
+			return;
 		s.source.Play ();
 	}
 
