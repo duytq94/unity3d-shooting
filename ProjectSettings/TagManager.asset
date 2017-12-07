@@ -8,6 +8,7 @@ TagManager:
   - Crosshair
   - Zombie
   - Knight
+  - Sword
   layers:
   - Default
   - TransparentFX

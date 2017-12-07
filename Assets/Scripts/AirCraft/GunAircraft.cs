@@ -18,23 +18,25 @@ public class GunAircraft : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetButtonDown ("Fire1")) {
-			timeTemp = Time.time;
-			click = true;
-		}
+		if (GetComponent<Camera> ().isActiveAndEnabled) {
+			if (Input.GetButtonDown ("Fire1")) {
+				timeTemp = Time.time;
+				click = true;
+			}
 			
-		// Long click
-		if (click && (Time.time - timeTemp) > 0.2) {
-			FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
-			Shoot ();
-		}
-
-		// Short click
-		if (Input.GetButtonUp ("Fire1")) {
-			click = false;
-			if ((Time.time - timeTemp) < 0.2) {
+			// Long click
+			if (click && (Time.time - timeTemp) > 0.2) {
 				FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
 				Shoot ();
+			}
+
+			// Short click
+			if (Input.GetButtonUp ("Fire1")) {
+				click = false;
+				if ((Time.time - timeTemp) < 0.2) {
+					FindObjectOfType<AudioManager> ().Play ("ShotHandGun");
+					Shoot ();
+				}
 			}
 		}
 
@@ -51,10 +53,10 @@ public class GunAircraft : MonoBehaviour
 	{
 		RaycastHit hit;
 		if (Physics.Raycast (GetComponent<Camera> ().transform.position, GetComponent<Camera> ().transform.forward, out hit, range)) {
-			ZombieControl target = hit.transform.GetComponent<ZombieControl> ();
+			SkeletonController target = hit.transform.GetComponent<SkeletonController> ();
 
 			if (target != null) {
-				target.TakeDamage (damage);
+				target.BeGunAttack (damage);
 			}
 
 			if (hit.rigidbody != null) {

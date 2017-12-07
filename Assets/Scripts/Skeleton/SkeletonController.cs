@@ -5,25 +5,26 @@ using UnityEngine.UI;
 
 public class SkeletonController : MonoBehaviour
 {
-	public float health = 50f;
+	public float maxhealth = 50f;
+	public float currenthealth = 50f;
 	public float speed = 1f;
+	public GameObject healthBar;
+	public GameObject skeletonCanvas;
 
-	private Animator anim;
+	private Animator animator;
 	private GameObject knight;
 	private bool isAllive = true;
 
-	// Use this for initialization
 	void Start ()
 	{
-		anim = GetComponent<Animator> ();
+		animator = GetComponent<Animator> ();
 		knight = GameObject.FindGameObjectWithTag ("Knight");
-		print (knight);
+		healthBar.GetComponent<Image> ().fillAmount = currenthealth / maxhealth;
 	}
 
-	// Update is called once per frame
 	void Update ()
 	{
-		if (health <= 0) {
+		if (currenthealth <= 0) {
 			return;
 		}
 
@@ -32,54 +33,60 @@ public class SkeletonController : MonoBehaviour
 			direction.y = 0;
 			this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f);
 
-			anim.SetBool ("isIdle", false);
+			animator.SetBool ("isIdle", false);
 
-			if (direction.magnitude > 0.1f) {
-				this.transform.Translate (0, 0, speed / 2000f);
-				anim.SetBool ("isWalking", true);
-				anim.SetBool ("isAttacking", false);
+			if (direction.magnitude > 2f) {
+				if (!animator.GetCurrentAnimatorStateInfo (0).IsName ("Damage")) {
+					this.transform.Translate (0, 0, speed / 10f);
+				}
+				animator.SetBool ("isWalking", true);
+				animator.SetBool ("isAttacking", false);
 			} else {
-				anim.SetBool ("isAttacking", true);
-				anim.SetBool ("isWalking", false);
+				animator.SetBool ("isAttacking", true);
+				animator.SetBool ("isWalking", false);
 			}
 
 		} else {
-			anim.SetBool ("isIdle", true);
-			anim.SetBool ("isWalking", false);
-			anim.SetBool ("isAttacking", false);
+			animator.SetBool ("isIdle", true);
+			animator.SetBool ("isWalking", false);
+			animator.SetBool ("isAttacking", false);
 		}
 	}
 
 	public void BeAttack (float damAttack)
 	{
-		health -= damAttack;
-		anim.SetBool ("isDamage", true);
-		if (health <= 0) {
-			anim.SetBool ("isDead", true);
-			isAllive = false;
-		}
+		ProcessAttack (damAttack);
 	}
 
 	public void BeGunAttack (float damAttack)
 	{
-		health -= damAttack;
-		anim.SetBool ("isDamage", true);
-		if (health <= 0) {
-			anim.SetBool ("isDead", true);
-			isAllive = false;
-		}
+		ProcessAttack (damAttack);
 		StartCoroutine (Wait ());
+	}
+
+	public void ProcessAttack (float damAttack)
+	{
+		currenthealth -= damAttack;
+		healthBar.GetComponent<Image> ().fillAmount = currenthealth / maxhealth;
+		animator.SetBool ("isDamage", true);
+		if (currenthealth <= 0) {
+			animator.SetBool ("isDead", true);
+			skeletonCanvas.SetActive (false);
+
+			isAllive = false;
+			Destroy (gameObject, 4f);
+		}
 	}
 
 	IEnumerator Wait ()
 	{
 		yield return new WaitForSeconds (0.25f);
-		anim.SetBool ("isDamage", false);
+		animator.SetBool ("isDamage", false);
 	}
 
 	public void ExitAttack ()
 	{
-		anim.SetBool ("isDamage", false);
+		animator.SetBool ("isDamage", false);
 	}
 
 	public bool GetIsAllive ()
