@@ -17,7 +17,7 @@ public class KnightController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		healthbar.value = health;
+		healthbar.value = health / 100f;
 		anim = GetComponent<Animator> ();
 		Cursor.lockState = CursorLockMode.Locked;
 		speed = speed / 20f;

@@ -15,13 +15,7 @@ Shader "Hidden/FastBlur" {
 		sampler2D _Bloom;
 				
 		uniform half4 _MainTex_TexelSize;
-		half4 _MainTex_ST;
-
-		half4 _Bloom_ST;
-
 		uniform half4 _Parameter;
-
-		
 
 		struct v2f_tap
 		{
@@ -37,10 +31,10 @@ Shader "Hidden/FastBlur" {
 			v2f_tap o;
 
 			o.pos = UnityObjectToClipPos (v.vertex);
-        	o.uv20 = UnityStereoScreenSpaceUVAdjust(v.texcoord + _MainTex_TexelSize.xy, _MainTex_ST);
-			o.uv21 = UnityStereoScreenSpaceUVAdjust(v.texcoord + _MainTex_TexelSize.xy * half2(-0.5h,-0.5h), _MainTex_ST);
-			o.uv22 = UnityStereoScreenSpaceUVAdjust(v.texcoord + _MainTex_TexelSize.xy * half2(0.5h,-0.5h), _MainTex_ST);
-			o.uv23 = UnityStereoScreenSpaceUVAdjust(v.texcoord + _MainTex_TexelSize.xy * half2(-0.5h,0.5h), _MainTex_ST);
+        	o.uv20 = v.texcoord + _MainTex_TexelSize.xy;				
+			o.uv21 = v.texcoord + _MainTex_TexelSize.xy * half2(-0.5h,-0.5h);	
+			o.uv22 = v.texcoord + _MainTex_TexelSize.xy * half2(0.5h,-0.5h);		
+			o.uv23 = v.texcoord + _MainTex_TexelSize.xy * half2(-0.5h,0.5h);		
 
 			return o; 
 		}					
@@ -106,7 +100,7 @@ Shader "Hidden/FastBlur" {
 			half4 color = 0;
   			for( int l = 0; l < 7; l++ )  
   			{   
-				half4 tap = tex2D(_MainTex, UnityStereoScreenSpaceUVAdjust(coords, _MainTex_ST));
+				half4 tap = tex2D(_MainTex, coords);
 				color += tap * curve4[l];
 				coords += netFilterWidth;
   			}
@@ -119,30 +113,36 @@ Shader "Hidden/FastBlur" {
 			v2f_withBlurCoordsSGX o;
 			o.pos = UnityObjectToClipPos (v.vertex);
 			
-			o.uv = UnityStereoScreenSpaceUVAdjust(v.texcoord.xy, _MainTex_ST);
-
-			half offsetMagnitude = _MainTex_TexelSize.x * _Parameter.x;
-			o.offs[0] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xyxy + offsetMagnitude * half4(-3.0h, 0.0h, 3.0h, 0.0h), _MainTex_ST);
-			o.offs[1] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xyxy + offsetMagnitude * half4(-2.0h, 0.0h, 2.0h, 0.0h), _MainTex_ST);
-			o.offs[2] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xyxy + offsetMagnitude * half4(-1.0h, 0.0h, 1.0h, 0.0h), _MainTex_ST);
+			o.uv = v.texcoord.xy;
+			half2 netFilterWidth = _MainTex_TexelSize.xy * half2(1.0, 0.0) * _Parameter.x; 
+			half4 coords = -netFilterWidth.xyxy * 3.0;
+			
+			o.offs[0] = v.texcoord.xyxy + coords * half4(1.0h,1.0h,-1.0h,-1.0h);
+			coords += netFilterWidth.xyxy;
+			o.offs[1] = v.texcoord.xyxy + coords * half4(1.0h,1.0h,-1.0h,-1.0h);
+			coords += netFilterWidth.xyxy;
+			o.offs[2] = v.texcoord.xyxy + coords * half4(1.0h,1.0h,-1.0h,-1.0h);
 
 			return o; 
-		}
+		}		
 		
 		v2f_withBlurCoordsSGX vertBlurVerticalSGX (appdata_img v)
 		{
 			v2f_withBlurCoordsSGX o;
 			o.pos = UnityObjectToClipPos (v.vertex);
 			
-			o.uv = half4(UnityStereoScreenSpaceUVAdjust(v.texcoord.xy, _MainTex_ST),1,1);
-
-			half offsetMagnitude = _MainTex_TexelSize.y * _Parameter.x;
-			o.offs[0] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xyxy + offsetMagnitude * half4(0.0h, -3.0h, 0.0h, 3.0h), _MainTex_ST);
-			o.offs[1] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xyxy + offsetMagnitude * half4(0.0h, -2.0h, 0.0h, 2.0h), _MainTex_ST);
-			o.offs[2] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xyxy + offsetMagnitude * half4(0.0h, -1.0h, 0.0h, 1.0h), _MainTex_ST);
+			o.uv = half4(v.texcoord.xy,1,1);
+			half2 netFilterWidth = _MainTex_TexelSize.xy * half2(0.0, 1.0) * _Parameter.x;
+			half4 coords = -netFilterWidth.xyxy * 3.0;
+			
+			o.offs[0] = v.texcoord.xyxy + coords * half4(1.0h,1.0h,-1.0h,-1.0h);
+			coords += netFilterWidth.xyxy;
+			o.offs[1] = v.texcoord.xyxy + coords * half4(1.0h,1.0h,-1.0h,-1.0h);
+			coords += netFilterWidth.xyxy;
+			o.offs[2] = v.texcoord.xyxy + coords * half4(1.0h,1.0h,-1.0h,-1.0h);
 
 			return o; 
-		}
+		}	
 
 		half4 fragBlurSGX ( v2f_withBlurCoordsSGX i ) : SV_Target
 		{

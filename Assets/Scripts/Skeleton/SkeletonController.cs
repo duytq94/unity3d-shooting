@@ -29,7 +29,8 @@ public class SkeletonController : MonoBehaviour
 		}
 
 		Vector3 direction = knight.transform.position - this.transform.position;
-		if (knight.GetComponent<KnightController> ().GetIsAllive ()) {
+		if (Vector3.Distance (knight.transform.position, this.transform.position) < 10
+		    && knight.GetComponent<KnightController> ().GetIsAllive ()) {
 			direction.y = 0;
 			this.transform.rotation = Quaternion.Slerp (this.transform.rotation, Quaternion.LookRotation (direction), 0.1f);
 
