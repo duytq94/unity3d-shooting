@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class CamSwitch : MonoBehaviour
 {
-	public Camera camKnight;
-	public Camera camAirCraft;
+	private Camera camKnight;
+	private Camera camAirCraft;
 	private GameObject crosshair;
 
 	void Start ()
 	{
 		crosshair = GameObject.FindGameObjectWithTag ("GUI").transform.GetChild (0).gameObject;
+		camKnight = GameObject.FindGameObjectWithTag ("KnightCamera").GetComponent<Camera> ();
+		camAirCraft = GameObject.FindGameObjectWithTag ("AircraftCamera").GetComponent<Camera> ();
 	}
 
 	void Update ()

@@ -12,6 +12,8 @@ TagManager:
   - WrapAircraftCamera
   - AircraftCamera
   - GUI
+  - HealthBar
+  - KnightCamera
   layers:
   - Default
   - TransparentFX

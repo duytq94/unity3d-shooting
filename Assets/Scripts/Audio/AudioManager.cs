@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -38,7 +39,11 @@ public class AudioManager : MonoBehaviour
 
 	void Start ()
 	{
-		Play ("DesertWind");
+		if (SceneManager.GetActiveScene ().name == "Level1") {
+			Play ("DesertWind");
+		} else {
+			Play ("Cemetery");
+		}
 	}
 
 	public void Play (string name)

@@ -7,16 +7,19 @@ public class KnightController : MonoBehaviour
 {
 	[Range (0f, 100f)]
 	public float health = 100f;
-	public Slider healthbar;
 	public float speed = 1f;
-	public GameObject knightView;
 
+	private GameObject knightCamera;
+	private Slider healthbar;
 	private Animator anim;
 	private bool isAllive = true;
 
 	// Use this for initialization
 	void Start ()
 	{
+		healthbar = GameObject.FindGameObjectWithTag ("HealthBar").GetComponent<Slider> ();
+		knightCamera = GameObject.FindGameObjectWithTag ("KnightCamera");
+
 		healthbar.value = health / 100f;
 		anim = GetComponent<Animator> ();
 		Cursor.lockState = CursorLockMode.Locked;
@@ -30,7 +33,7 @@ public class KnightController : MonoBehaviour
 			return;
 		}
 
-		if (knightView.GetComponent<Camera> ().isActiveAndEnabled) {
+		if (knightCamera.GetComponent<Camera> ().isActiveAndEnabled) {
 			float translation = Input.GetAxis ("Vertical") * speed;
 			float straffe = Input.GetAxis ("Horizontal") * speed;
 			translation *= Time.deltaTime;

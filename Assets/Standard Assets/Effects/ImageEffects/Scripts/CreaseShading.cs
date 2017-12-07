@@ -6,7 +6,7 @@ namespace UnityStandardAssets.ImageEffects
     [ExecuteInEditMode]
     [RequireComponent (typeof(Camera))]
     [AddComponentMenu ("Image Effects/Edge Detection/Crease Shading")]
-    public class CreaseShading : PostEffectsBase
+    class CreaseShading : PostEffectsBase
 	{
         public float intensity = 0.5f;
         public int softness = 1;

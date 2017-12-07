@@ -13,7 +13,6 @@ namespace UnityStandardAssets.ImageEffects
     [RequireComponent(typeof(Camera))]
     public class MotionBlur : ImageEffectBase
     {
-        [Range(0.0f, 0.92f)]
         public float blurAmount = 0.8f;
         public bool extraBlur = false;
 
