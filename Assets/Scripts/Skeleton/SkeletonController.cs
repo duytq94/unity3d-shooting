@@ -75,12 +75,13 @@ public class SkeletonController : MonoBehaviour
 		currenthealth -= damAttack;
 		healthBar.GetComponent<Image> ().fillAmount = currenthealth / maxhealth;
 		animator.SetBool ("isDamage", true);
-		if (currenthealth <= 0) {
+		if (currenthealth <= 0 && isAllive) {
 			animator.SetBool ("isDead", true);
 			skeletonCanvas.SetActive (false);
 
 			isAllive = false;
 			Destroy (gameObject, 4f);
+			FindObjectOfType<BoardManager> ().SkeletonDead ();
 		}
 	}
 

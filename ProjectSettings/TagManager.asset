@@ -16,6 +16,8 @@ TagManager:
   - KnightCamera
   - SkeletonCanvas
   - HealthBarSkeleton
+  - QuantityAlive
+  - QuantityDead
   layers:
   - Default
   - TransparentFX
