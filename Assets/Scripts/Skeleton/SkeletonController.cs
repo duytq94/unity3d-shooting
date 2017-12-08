@@ -8,6 +8,7 @@ public class SkeletonController : MonoBehaviour
 	public float maxhealth = 50f;
 	public float currenthealth = 50f;
 	public float speed = 1f;
+	public GameObject bloodParticles;
 	public GameObject healthBar;
 	public GameObject skeletonCanvas;
 
@@ -58,9 +59,11 @@ public class SkeletonController : MonoBehaviour
 	public void BeAttack (float damAttack)
 	{
 		ProcessAttack (damAttack);
+		GameObject blood = Instantiate (bloodParticles, this.transform.position, this.transform.rotation);
+		Destroy (blood, 1f);
 	}
 
-	public void BeGunAttack (float damAttack)
+	public void BeGunAttack (float damAttack, Vector3 position)
 	{
 		ProcessAttack (damAttack);
 		StartCoroutine (Wait ());

@@ -10,6 +10,7 @@ public class GunAircraft : MonoBehaviour
 
 	public GameObject crosshair;
 	public GameObject impactEffect;
+	public GameObject bloodParticles;
 
 	public Camera[] cams;
 
@@ -45,18 +46,23 @@ public class GunAircraft : MonoBehaviour
 	{
 		RaycastHit hit;
 		if (Physics.Raycast (GetComponent<Camera> ().transform.position, GetComponent<Camera> ().transform.forward, out hit, range)) {
-			SkeletonController target = hit.transform.GetComponent<SkeletonController> ();
-
-			if (target != null) {
-				target.BeGunAttack (damage);
-			}
-
 			if (hit.rigidbody != null) {
 				hit.rigidbody.AddForce (-hit.normal * impactForce);
 			}
 
-			GameObject impactGO = Instantiate (impactEffect, hit.point, Quaternion.LookRotation (hit.normal));
-			Destroy (impactGO, 0.5f);
+			SkeletonController skeletonController = hit.transform.GetComponent<SkeletonController> ();
+			// Shoot to skeleton
+			if (skeletonController != null) {
+				if (skeletonController != null) {
+					skeletonController.BeGunAttack (damage, hit.point);
+				}
+				GameObject blood = Instantiate (bloodParticles, hit.point, Quaternion.LookRotation (hit.normal));
+				Destroy (blood, 1f);
+			} else {
+				// Shoot to something else
+				GameObject impact = Instantiate (impactEffect, hit.point, Quaternion.LookRotation (hit.normal));
+				Destroy (impact, 0.5f);
+			}
 		}
 	}
 }
