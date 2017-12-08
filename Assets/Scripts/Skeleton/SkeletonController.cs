@@ -56,14 +56,15 @@ public class SkeletonController : MonoBehaviour
 		}
 	}
 
-	public void BeAttack (float damAttack)
+	public void BeAttack (float damAttack, Vector3 pos)
 	{
 		ProcessAttack (damAttack);
-		GameObject blood = Instantiate (bloodParticles, this.transform.position, this.transform.rotation);
+		pos.y = pos.y / 2;
+		GameObject blood = Instantiate (bloodParticles, pos, this.transform.rotation);
 		Destroy (blood, 1f);
 	}
 
-	public void BeGunAttack (float damAttack, Vector3 position)
+	public void BeGunAttack (float damAttack)
 	{
 		ProcessAttack (damAttack);
 		StartCoroutine (Wait ());
