@@ -11,7 +11,7 @@ public class KnightController : MonoBehaviour
 
 	private GameObject knightCamera;
 	private Slider healthbar;
-	private Animator anim;
+	private Animator animator;
 	private bool isAllive = true;
 
 	// Use this for initialization
@@ -21,7 +21,7 @@ public class KnightController : MonoBehaviour
 		knightCamera = GameObject.FindGameObjectWithTag ("KnightCamera");
 
 		healthbar.value = health / 100f;
-		anim = GetComponent<Animator> ();
+		animator = GetComponent<Animator> ();
 		Cursor.lockState = CursorLockMode.Locked;
 		speed = speed / 20f;
 	}
@@ -41,19 +41,19 @@ public class KnightController : MonoBehaviour
 
 			transform.Translate (straffe, 0, translation);
 		
-			if (Input.GetButton ("Fire1")) {
-				anim.SetBool ("isAttacking", true);
-				FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.5f);
+			if (Input.GetButton ("Fire1") && !animator.GetCurrentAnimatorStateInfo (0).IsName ("Attack1")) {
+				animator.SetBool ("isAttacking", true);
+				FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.3f);
 			} else {
-				anim.SetBool ("isAttacking", false);
+				animator.SetBool ("isAttacking", false);
 			}
 
 			if (translation != 0) {
-				anim.SetBool ("isWalking", true);
-				anim.SetBool ("isIdle", false);
+				animator.SetBool ("isWalking", true);
+				animator.SetBool ("isIdle", false);
 			} else {
-				anim.SetBool ("isWalking", false);
-				anim.SetBool ("isIdle", true);
+				animator.SetBool ("isWalking", false);
+				animator.SetBool ("isIdle", true);
 			}
 		}
 
@@ -66,16 +66,16 @@ public class KnightController : MonoBehaviour
 	{
 		health -= damAttack;
 		healthbar.value = health / 100f;
-		anim.SetBool ("isDamage", true);
+		animator.SetBool ("isDamage", true);
 		if (health <= 0) {
-			anim.SetBool ("isDead", true);
+			animator.SetBool ("isDead", true);
 			isAllive = false;
 		}
 	}
 
 	public void ExitAttack ()
 	{
-		anim.SetBool ("isDamage", false);
+		animator.SetBool ("isDamage", false);
 	}
 
 	public bool GetIsAllive ()

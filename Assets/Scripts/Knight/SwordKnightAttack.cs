@@ -5,7 +5,13 @@ using UnityEngine;
 public class SwordKnightAttack : MonoBehaviour
 {
 	public float damAttack = 20f;
-	public GameObject knight;
+
+	private GameObject knight;
+
+	void Start ()
+	{
+		knight = GameObject.FindGameObjectWithTag ("Knight");
+	}
 
 	void OnTriggerEnter (Collider col)
 	{
