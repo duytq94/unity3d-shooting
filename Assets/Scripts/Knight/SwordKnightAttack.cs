@@ -17,7 +17,7 @@ public class SwordKnightAttack : MonoBehaviour
 	{
 		if (col.tag == "Skeleton" && knight.GetComponent<KnightController> ().GetIsAllive ()
 		    && knight.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Attack1")) {
-			col.gameObject.GetComponent<SkeletonController> ().BeAttack (damAttack, col.bounds.max);
+			col.gameObject.GetComponent<SkeletonController> ().BeAttack (damAttack);
 		}
 	}
 

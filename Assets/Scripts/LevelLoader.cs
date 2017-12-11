@@ -15,12 +15,14 @@ public class LevelLoader : MonoBehaviour
 
 	public void Start ()
 	{
-		if (PlayerPrefs.GetFloat ("Volume", -1f) != -1f) {
-			sliderVolume.value = PlayerPrefs.GetFloat (keyVolume);
-		} else {
-			sliderVolume.value = 0.5f;
+		if (sliderVolume != null) {
+			if (PlayerPrefs.GetFloat ("Volume", -1f) != -1f) {
+				sliderVolume.value = PlayerPrefs.GetFloat (keyVolume);
+			} else {
+				sliderVolume.value = 0.5f;
+			}
+			AudioListener.volume = sliderVolume.value;
 		}
-		AudioListener.volume = sliderVolume.value;
 	}
 
 	public void LoadLevel (string sceneName)

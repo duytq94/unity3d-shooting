@@ -15,12 +15,14 @@ public class SkeletonController : MonoBehaviour
 	private Animator animator;
 	private GameObject knight;
 	private bool isAllive = true;
+	private Collider colSkeleton;
 
 	void Start ()
 	{
 		animator = GetComponent<Animator> ();
 		knight = GameObject.FindGameObjectWithTag ("Knight");
 		healthBar.GetComponent<Image> ().fillAmount = currenthealth / maxhealth;
+		colSkeleton = GetComponent<Collider> ();
 	}
 
 	void Update ()
@@ -56,18 +58,21 @@ public class SkeletonController : MonoBehaviour
 		}
 	}
 
-	public void BeAttack (float damAttack, Vector3 pos)
+	public void BeAttack (float damAttack)
 	{
-		ProcessAttack (damAttack);
-		pos.y = pos.y / 2;
-		GameObject blood = Instantiate (bloodParticles, pos, this.transform.rotation);
-		Destroy (blood, 1f);
+		if (isAllive) {
+			ProcessAttack (damAttack);
+			GameObject blood = Instantiate (bloodParticles, colSkeleton.bounds.center, this.transform.rotation);
+			Destroy (blood, 1f);
+		}
 	}
 
 	public void BeGunAttack (float damAttack)
 	{
-		ProcessAttack (damAttack);
-		StartCoroutine (Wait ());
+		if (isAllive) {
+			ProcessAttack (damAttack);
+			StartCoroutine (Wait ());
+		}
 	}
 
 	public void ProcessAttack (float damAttack)
@@ -81,7 +86,7 @@ public class SkeletonController : MonoBehaviour
 
 			isAllive = false;
 			Destroy (gameObject, 4f);
-			FindObjectOfType<BoardManager> ().SkeletonDead ();
+			FindObjectOfType<GameManager> ().SkeletonDead ();
 		}
 	}
 

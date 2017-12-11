@@ -52,7 +52,7 @@ public class GunAircraft : MonoBehaviour
 
 			SkeletonController skeletonController = hit.transform.GetComponent<SkeletonController> ();
 			// Shoot to skeleton
-			if (skeletonController != null) {
+			if (skeletonController != null && skeletonController.GetIsAllive ()) {
 				skeletonController.BeGunAttack (damage);
 				GameObject blood = Instantiate (bloodParticles, hit.point, Quaternion.LookRotation (hit.normal));
 				Destroy (blood, 1f);

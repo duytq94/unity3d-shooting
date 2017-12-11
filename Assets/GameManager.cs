@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoardManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
+
 	private int quantityAlive;
 	private int quantityDead;
 	private Text quantityAliveBoard;
@@ -30,5 +31,8 @@ public class BoardManager : MonoBehaviour
 	{
 		quantityDead++;
 		quantityDeadBoard.text = quantityDead.ToString ();
+		if (quantityDead >= 5) {
+			FindObjectOfType<LevelLoader> ().LoadLevel ("Level2");
+		}
 	}
 }
