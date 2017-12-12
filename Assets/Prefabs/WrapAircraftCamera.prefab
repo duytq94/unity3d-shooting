@@ -1553,9 +1553,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   range: 100
-  impactForce: 60
+  impactForce: 10
   crosshair: {fileID: 0}
   impactEffect: {fileID: 1693585532707334, guid: 53dbcddc1f3b91f48a83fcb60d0af594,
+    type: 2}
+  bloodParticles: {fileID: 1728769391521496, guid: ff14ffc192eaf88469c6fc383119a33f,
     type: 2}
   cams:
   - {fileID: 0}

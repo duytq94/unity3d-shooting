@@ -41,7 +41,7 @@ public class SkeletonController : MonoBehaviour
 
 			if (direction.magnitude > 2f) {
 				if (!animator.GetCurrentAnimatorStateInfo (0).IsName ("Damage")) {
-					this.transform.Translate (0, 0, speed / 10f);
+					this.transform.Translate (0, 0, speed / 30f);
 				}
 				animator.SetBool ("isWalking", true);
 				animator.SetBool ("isAttacking", false);

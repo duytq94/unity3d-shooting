@@ -6,7 +6,7 @@ public class GunAircraft : MonoBehaviour
 
 	public float damage = 10f;
 	public float range = 100f;
-	public float impactForce = 60f;
+	public float impactForce = 10f;
 
 	public GameObject crosshair;
 	public GameObject impactEffect;

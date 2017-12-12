@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 23545519706477058}
   - component: {fileID: 114098053775457176}
   - component: {fileID: 136815297655121110}
+  - component: {fileID: 114626346796427544}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Sword
@@ -420,6 +421,7 @@ GameObject:
   - component: {fileID: 54076625337163486}
   - component: {fileID: 114985609261162742}
   - component: {fileID: 65276982107110078}
+  - component: {fileID: 114965277289627212}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Skeleton
@@ -1334,8 +1336,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.15, z: 0.08}
-  m_Center: {x: 0, y: 0.08, z: 0}
+  m_Size: {x: 0.06, y: 0.15, z: 0.04}
+  m_Center: {x: 0, y: 0.075, z: 0}
 --- !u!95 &95012185744155930
 Animator:
   serializedVersion: 3
@@ -1345,7 +1347,7 @@ Animator:
   m_GameObject: {fileID: 1518678304840900}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
-  m_Controller: {fileID: 9100000, guid: 4d94ad65ea6421e4487e74d46dcb75b2, type: 2}
+  m_Controller: {fileID: 9100000, guid: f5544462dbe765a47b4144dd2c362a2c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1468,6 +1470,37 @@ MonoBehaviour:
   m_FillAmount: 0.463
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114626346796427544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506941863904792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6be57efccc459d4d83a60c4bab0d710, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damAttack: 10
+  skeleton: {fileID: 1518678304840900}
+--- !u!114 &114965277289627212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1518678304840900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3687d9d34dbe64a9b37293d2f6727b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxhealth: 50
+  currenthealth: 50
+  speed: 1
+  bloodParticles: {fileID: 1728769391521496, guid: ff14ffc192eaf88469c6fc383119a33f,
+    type: 2}
+  healthBar: {fileID: 1639448816736182}
+  skeletonCanvas: {fileID: 1588716137133994}
 --- !u!114 &114985609261162742
 MonoBehaviour:
   m_ObjectHideFlags: 1
