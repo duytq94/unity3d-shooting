@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class AircraftController : MonoBehaviour
 {
 
 	public float speed = 10f;
