@@ -35,7 +35,7 @@ public class CamSwitch : MonoBehaviour
 		if (SceneManager.GetActiveScene ().name == "Level1") {
 			FindObjectOfType<AudioManager> ().Play ("DesertWind");
 			FindObjectOfType<AudioManager> ().Pause ("Helicopter");
-		} else {
+		} else if (SceneManager.GetActiveScene ().name == "Level2") {
 			FindObjectOfType<AudioManager> ().Play ("Cemetery");
 			FindObjectOfType<AudioManager> ().Pause ("Helicopter");
 		}
@@ -52,7 +52,7 @@ public class CamSwitch : MonoBehaviour
 		if (SceneManager.GetActiveScene ().name == "Level1") {
 			FindObjectOfType<AudioManager> ().Pause ("DesertWind");
 			FindObjectOfType<AudioManager> ().Play ("Helicopter");
-		} else {
+		} else if (SceneManager.GetActiveScene ().name == "Level2") {
 			FindObjectOfType<AudioManager> ().Pause ("Cemetery");
 			FindObjectOfType<AudioManager> ().Play ("Helicopter");
 		}

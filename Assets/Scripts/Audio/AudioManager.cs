@@ -41,7 +41,7 @@ public class AudioManager : MonoBehaviour
 	{
 		if (SceneManager.GetActiveScene ().name == "Level1") {
 			Play ("DesertWind");
-		} else {
+		} else if (SceneManager.GetActiveScene ().name == "Level2") {
 			Play ("Cemetery");
 		}
 	}
