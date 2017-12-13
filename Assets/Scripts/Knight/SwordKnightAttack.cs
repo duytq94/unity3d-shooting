@@ -16,7 +16,7 @@ public class SwordKnightAttack : MonoBehaviour
 	void OnTriggerEnter (Collider col)
 	{
 		if (col.tag == "Skeleton" && knight.GetComponent<KnightController> ().GetIsAllive ()
-		    && knight.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Attack1")) {
+		    && knight.GetComponent<Animator> ().GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
 			col.gameObject.GetComponent<SkeletonController> ().BeAttack (damAttack);
 		}
 	}

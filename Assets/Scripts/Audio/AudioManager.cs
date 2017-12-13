@@ -66,6 +66,7 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
+	// Play ignore previous is playing or not
 	public void PlayCountinuous (string name)
 	{
 		Sound s = Array.Find (sounds, sound => sound.name == name);

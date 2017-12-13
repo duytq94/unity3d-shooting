@@ -7,12 +7,14 @@ public class KnightController : MonoBehaviour
 {
 	[Range (0f, 100f)]
 	public float health = 100f;
-	public float speed = 1f;
+	public float originSpeed = 5f;
+	public float maxSpeed = 15f;
 
 	private GameObject knightCamera;
 	private Slider healthbar;
 	private Animator animator;
 	private bool isAllive = true;
+	private float currentSpeed;
 
 	// Use this for initialization
 	void Start ()
@@ -22,8 +24,8 @@ public class KnightController : MonoBehaviour
 
 		healthbar.value = health / 100f;
 		animator = GetComponent<Animator> ();
+		currentSpeed = originSpeed;
 		Cursor.lockState = CursorLockMode.Locked;
-		speed = speed / 20f;
 	}
 
 	// Update is called once per frame
@@ -34,16 +36,22 @@ public class KnightController : MonoBehaviour
 		}
 
 		if (knightCamera.GetComponent<Camera> ().isActiveAndEnabled) {
-			float translation = Input.GetAxis ("Vertical") * speed;
-			float straffe = Input.GetAxis ("Horizontal") * speed;
+			if (currentSpeed < maxSpeed && Input.GetKey ("w")) {
+				currentSpeed += 0.2f;
+			} 
+			if (Input.GetKeyUp ("w")) {
+				currentSpeed = originSpeed;
+			}
+			float translation = Input.GetAxis ("Vertical") * currentSpeed;
+			float straffe = Input.GetAxis ("Horizontal") * currentSpeed;
 			translation *= Time.deltaTime;
 			straffe *= Time.deltaTime;
 
 			transform.Translate (straffe, 0, translation);
 		
-			if (Input.GetButton ("Fire1") && !animator.GetCurrentAnimatorStateInfo (0).IsName ("Attack1")) {
+			if (Input.GetButton ("Fire1") && !animator.GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
 				animator.SetBool ("isAttacking", true);
-				FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.3f);
+				FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.2f);
 			} else {
 				animator.SetBool ("isAttacking", false);
 			}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CamSwitch : MonoBehaviour
 {
@@ -31,8 +32,14 @@ public class CamSwitch : MonoBehaviour
 		camKnight.enabled = true;
 		camAirCraft.enabled = false;
 
-		FindObjectOfType<AudioManager> ().Play ("DesertWind");
-		FindObjectOfType<AudioManager> ().Pause ("Helicopter");
+		if (SceneManager.GetActiveScene ().name == "Level1") {
+			FindObjectOfType<AudioManager> ().Play ("DesertWind");
+			FindObjectOfType<AudioManager> ().Pause ("Helicopter");
+		} else {
+			FindObjectOfType<AudioManager> ().Play ("Cemetery");
+			FindObjectOfType<AudioManager> ().Pause ("Helicopter");
+		}
+
 
 		crosshair.SetActive (false);
 	}
@@ -42,8 +49,13 @@ public class CamSwitch : MonoBehaviour
 		camKnight.enabled = false;
 		camAirCraft.enabled = true;
 
-		FindObjectOfType<AudioManager> ().Pause ("DesertWind");
-		FindObjectOfType<AudioManager> ().Play ("Helicopter");
+		if (SceneManager.GetActiveScene ().name == "Level1") {
+			FindObjectOfType<AudioManager> ().Pause ("DesertWind");
+			FindObjectOfType<AudioManager> ().Play ("Helicopter");
+		} else {
+			FindObjectOfType<AudioManager> ().Pause ("Cemetery");
+			FindObjectOfType<AudioManager> ().Play ("Helicopter");
+		}
 
 		crosshair.SetActive (true);
 	}

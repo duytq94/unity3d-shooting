@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class RandomSkeleton : MonoBehaviour
 {
-	// Plan zombie will born on it
+	// Plan skeleton will born on it
 	public GameObject plan;
 
-	// Model zombie
+	// Model skeleton
 	public GameObject modelSkeleton;
 
 	// Player
@@ -53,7 +53,7 @@ public class RandomSkeleton : MonoBehaviour
 				if (Vector3.Distance (player.transform.position, spawnPosition) > distanceFromPlayer) {
 					Instantiate (modelSkeleton, 
 						spawnPosition, 
-						Quaternion.Euler (modelSkeleton.transform.rotation.x, Random.rotation.y, modelSkeleton.transform.rotation.z));
+						Quaternion.Euler (modelSkeleton.transform.rotation.x, Random.Range (0f, 360f), modelSkeleton.transform.rotation.z));
 				}
 			}
 		}

@@ -75,6 +75,13 @@ public class SkeletonController : MonoBehaviour
 		}
 	}
 
+	public void BeMissileAttack(float damAttack){
+		if (isAllive) {
+			ProcessAttack (damAttack);
+			StartCoroutine (Wait ());
+		}
+	}
+
 	public void ProcessAttack (float damAttack)
 	{
 		currenthealth -= damAttack;

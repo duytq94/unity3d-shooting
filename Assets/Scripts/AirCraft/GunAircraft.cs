@@ -7,42 +7,53 @@ public class GunAircraft : MonoBehaviour
 	public float damage = 10f;
 	public float range = 100f;
 	public float impactForce = 10f;
+	public float speedMissile = 800f;
 
 	public GameObject crosshair;
 	public GameObject impactEffect;
 	public GameObject bloodParticles;
+	public GameObject aircraft;
+	public GameObject missile2;
 
 	public Camera[] cams;
 
-	private float timeTemp;
+	private float timeTempGun;
+	private float timeTempMissile;
 	private bool click;
 
 	void Update ()
 	{
 		if (GetComponent<Camera> ().isActiveAndEnabled) {
 			if (Input.GetButtonDown ("Fire1")) {
-				timeTemp = Time.time;
+				timeTempGun = Time.time;
 				click = true;
 			}
-			
+
+			// Missile
+			if (Input.GetKeyDown ("space") && (Time.time - timeTempMissile > 0.5)) {
+				FindObjectOfType<AudioManager> ().PlayCountinuous ("MissileFire");
+				timeTempMissile = Time.time;
+				ShootMissile ();
+			}
+
 			// Long click
-			if (click && (Time.time - timeTemp) > 0.2) {
+			if (click && (Time.time - timeTempGun) > 0.2) {
 				FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
-				Shoot ();
+				ShootGun ();
 			}
 
 			// Short click
 			if (Input.GetButtonUp ("Fire1")) {
 				click = false;
-				if ((Time.time - timeTemp) < 0.2) {
+				if ((Time.time - timeTempGun) < 0.2) {
 					FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
-					Shoot ();
+					ShootGun ();
 				}
 			}
 		}
 	}
 
-	void Shoot ()
+	public void ShootGun ()
 	{
 		RaycastHit hit;
 		if (Physics.Raycast (GetComponent<Camera> ().transform.position, GetComponent<Camera> ().transform.forward, out hit, range)) {
@@ -62,5 +73,14 @@ public class GunAircraft : MonoBehaviour
 				Destroy (impact, 0.5f);
 			}
 		}
+	}
+
+	public void ShootMissile ()
+	{
+		GameObject missileModel = Instantiate (missile2);
+		Rigidbody rb = missileModel.GetComponent<Rigidbody> ();
+		missileModel.transform.rotation = GetComponent<Camera> ().transform.rotation;
+		missileModel.transform.position = aircraft.transform.position;
+		rb.AddForce (GetComponent<Camera> ().transform.forward * speedMissile);
 	}
 }

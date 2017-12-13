@@ -18,6 +18,7 @@ TagManager:
   - HealthBarSkeleton
   - QuantityAlive
   - QuantityDead
+  - Missile
   layers:
   - Default
   - TransparentFX

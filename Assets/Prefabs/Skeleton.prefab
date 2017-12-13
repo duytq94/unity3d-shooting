@@ -419,7 +419,6 @@ GameObject:
   - component: {fileID: 4823941196851700}
   - component: {fileID: 95012185744155930}
   - component: {fileID: 54076625337163486}
-  - component: {fileID: 114985609261162742}
   - component: {fileID: 65276982107110078}
   - component: {fileID: 114965277289627212}
   m_Layer: 0
@@ -456,6 +455,7 @@ GameObject:
   - component: {fileID: 114159246063790338}
   - component: {fileID: 114273147565498182}
   - component: {fileID: 114433680637068576}
+  - component: {fileID: 114202754463969950}
   m_Layer: 0
   m_Name: SkeletonCanvas
   m_TagString: SkeletonCanvas
@@ -1324,7 +1324,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &65276982107110078
 BoxCollider:
@@ -1389,6 +1389,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114202754463969950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588716137133994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5710af9b6196d8f4892210a21a70399b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114273147565498182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1492,24 +1503,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f3687d9d34dbe64a9b37293d2f6727b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxhealth: 50
-  currenthealth: 50
-  speed: 1
-  bloodParticles: {fileID: 1728769391521496, guid: ff14ffc192eaf88469c6fc383119a33f,
-    type: 2}
-  healthBar: {fileID: 1639448816736182}
-  skeletonCanvas: {fileID: 1588716137133994}
---- !u!114 &114985609261162742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1518678304840900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97681b17371e0eb4b8e4c2b9feb535bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxhealth: 50
