@@ -193,7 +193,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 1923556600700086, guid: 3eb45b8c2361dd34db315be44130a0cb,
     type: 2}
   radiusExplosion: 5
-  forceExplosion: 700
+  forceExplosion: 1500
 --- !u!135 &135006404562214212
 SphereCollider:
   m_ObjectHideFlags: 1

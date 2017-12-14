@@ -206,7 +206,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 1923556600700086, guid: 3eb45b8c2361dd34db315be44130a0cb,
     type: 2}
   radiusExplosion: 5
-  forceExplosion: 700
+  forceExplosion: 1000
 --- !u!123 &123991011021817608
 LensFlare:
   m_ObjectHideFlags: 1
@@ -295,7 +295,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -181496790
+  randomSeed: -113363082
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3612,7 +3612,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 757316038
+  randomSeed: 1117844820
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3764,7 +3764,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2

@@ -7,7 +7,14 @@ public class MissileController : MonoBehaviour
 
 	public GameObject explosionEffect;
 	public float radiusExplosion = 5f;
-	public float forceExplosion = 700f;
+	public float forceExplosion = 1500f;
+
+	void Update ()
+	{
+		transform.Rotate (new Vector3 (0f, 0f, 20f));
+		// Destroy if missile don't trigger anything
+		Destroy (gameObject, 10f);
+	}
 
 	void OnTriggerEnter (Collider other)
 	{
