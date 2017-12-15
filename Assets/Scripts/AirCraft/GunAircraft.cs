@@ -13,7 +13,7 @@ public class GunAircraft : MonoBehaviour
 	public GameObject impactEffect;
 	public GameObject bloodParticles;
 	public GameObject aircraft;
-	public GameObject missile2;
+	public GameObject missileModel;
 
 	public Camera[] cams;
 
@@ -77,10 +77,10 @@ public class GunAircraft : MonoBehaviour
 
 	public void ShootMissile ()
 	{
-		GameObject missileModel = Instantiate (missile2);
-		Rigidbody rb = missileModel.GetComponent<Rigidbody> ();
-		missileModel.transform.rotation = GetComponent<Camera> ().transform.rotation;
-		missileModel.transform.position = aircraft.transform.position;
+		GameObject missile = Instantiate (missileModel);
+		Rigidbody rb = missile.GetComponent<Rigidbody> ();
+		missile.transform.rotation = GetComponent<Camera> ().transform.rotation;
+		missile.transform.position = aircraft.transform.position;
 		rb.AddForce (GetComponent<Camera> ().transform.forward * speedMissile);
 	}
 }

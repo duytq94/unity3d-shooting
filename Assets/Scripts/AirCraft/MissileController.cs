@@ -13,7 +13,7 @@ public class MissileController : MonoBehaviour
 	{
 		transform.Rotate (new Vector3 (0f, 0f, 20f));
 		// Destroy if missile don't trigger anything
-		Destroy (gameObject, 10f);
+		Destroy (gameObject, 20f);
 	}
 
 	void OnTriggerEnter (Collider other)
