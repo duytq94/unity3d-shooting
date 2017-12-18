@@ -51,3 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0793adda5f923e14591dc4b285f68671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resDropdown: {fileID: 0}
+  sliderVolume: {fileID: 0}

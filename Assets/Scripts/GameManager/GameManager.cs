@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
 	public Dropdown resDropdown;
+	public Slider sliderVolume;
 	private Resolution[] resolutions;
 
 	private int quantityAlive;
@@ -16,10 +17,15 @@ public class GameManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		quantityAliveBoard = GameObject.FindGameObjectWithTag ("QuantityAlive").GetComponent<Text> ();
-		quantityDeadBoard = GameObject.FindGameObjectWithTag ("QuantityDead").GetComponent<Text> ();
-		quantityAliveBoard.text = "0";
-		quantityDeadBoard.text = "0";
+		Cursor.lockState = CursorLockMode.Locked;
+		if (GameObject.FindGameObjectWithTag ("QuantityAlive") != null) {
+			quantityAliveBoard = GameObject.FindGameObjectWithTag ("QuantityAlive").GetComponent<Text> ();
+			quantityAliveBoard.text = "0";
+		}
+		if (GameObject.FindGameObjectWithTag ("QuantityDead") != null) {
+			quantityDeadBoard = GameObject.FindGameObjectWithTag ("QuantityDead").GetComponent<Text> ();
+			quantityDeadBoard.text = "0";
+		}
 
 		int currentResIndex = 0;
 		resolutions = Screen.resolutions;
@@ -35,13 +41,33 @@ public class GameManager : MonoBehaviour
 		resDropdown.AddOptions (options);
 		resDropdown.value = currentResIndex;
 		resDropdown.RefreshShownValue ();
+
+		if (sliderVolume != null) {
+			if (PlayerPrefs.GetFloat ("Volume", -1f) != -1f) {
+				sliderVolume.value = PlayerPrefs.GetFloat ("Volume");
+			} else {
+				sliderVolume.value = 0.5f;
+			}
+			AudioListener.volume = sliderVolume.value;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		quantityAlive = GameObject.FindGameObjectsWithTag ("Skeleton").Length;
-		quantityAliveBoard.text = quantityAlive.ToString ();
+		if (quantityAliveBoard != null) {
+			quantityAlive = GameObject.FindGameObjectsWithTag ("Skeleton").Length;
+			quantityAliveBoard.text = quantityAlive.ToString ();
+		}
+		if (Input.GetKeyDown ("escape")) {
+			Cursor.lockState = CursorLockMode.None;
+		}
+	}
+
+	public void SetVolume (float volume)
+	{
+		AudioListener.volume = volume;
+		PlayerPrefs.SetFloat ("Volume", volume);
 	}
 
 	public void SkeletonDead ()
@@ -57,14 +83,22 @@ public class GameManager : MonoBehaviour
 	{
 		if (isPause) {
 			Time.timeScale = 0;
+			FindObjectOfType<AudioManager> ().enabled = false;
+			GameObject.FindGameObjectWithTag ("KnightCamera").GetComponent<MouseLookKnight> ().enabled = false;
+			GameObject.FindGameObjectWithTag ("AircraftCamera").GetComponent<MouseLookAircraft> ().enabled = false;
+			GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioListener> ().enabled = false;
 		} else {
 			Time.timeScale = 1;
+			GameObject.FindGameObjectWithTag ("KnightCamera").GetComponent<MouseLookKnight> ().enabled = true;
+			GameObject.FindGameObjectWithTag ("AircraftCamera").GetComponent<MouseLookAircraft> ().enabled = true;
+			GameObject.FindGameObjectWithTag ("AudioManager").GetComponent<AudioListener> ().enabled = true;
 		}
 	}
 
 	public void SetQuality (int qualityIndex)
 	{
 		QualitySettings.SetQualityLevel (qualityIndex);
+		print (qualityIndex);
 	}
 
 	public void SetFullScreen (bool isFullScreen)

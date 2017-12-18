@@ -15,6 +15,7 @@ public class KnightController : MonoBehaviour
 	private Animator animator;
 	private bool isAllive = true;
 	private float currentSpeed;
+	private Button attackButton;
 
 	// Use this for initialization
 	void Start ()
@@ -25,7 +26,9 @@ public class KnightController : MonoBehaviour
 		healthbar.value = health / 100f;
 		animator = GetComponent<Animator> ();
 		currentSpeed = originSpeed;
-		Cursor.lockState = CursorLockMode.Locked;
+
+		attackButton = GameObject.FindGameObjectWithTag ("AttackButton").GetComponent<Button> ();
+		attackButton.onClick.AddListener (ProcessAttack);
 	}
 
 	// Update is called once per frame
@@ -48,13 +51,6 @@ public class KnightController : MonoBehaviour
 			straffe *= Time.deltaTime;
 
 			transform.Translate (straffe, 0, translation);
-		
-			if (Input.GetButton ("Fire1") && !animator.GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
-				animator.SetBool ("isAttacking", true);
-				FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.2f);
-			} else {
-				animator.SetBool ("isAttacking", false);
-			}
 
 			if (translation != 0) {
 				animator.SetBool ("isWalking", true);
@@ -64,10 +60,21 @@ public class KnightController : MonoBehaviour
 				animator.SetBool ("isIdle", true);
 			}
 		}
+	}
 
-		if (Input.GetKeyDown ("escape")) {
-			Cursor.lockState = CursorLockMode.None;
+	public void ProcessAttack ()
+	{
+		if (!animator.GetCurrentAnimatorStateInfo (0).IsName ("Attack")) {
+			animator.SetBool ("isAttacking", true);
+			StartCoroutine (SetFalseAnimation ("isAttacking", 0.8f));
+			FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.2f);
 		}
+	}
+
+	IEnumerator SetFalseAnimation (string name, float time)
+	{
+		yield return new WaitForSeconds (time);
+		animator.SetBool (name, false);
 	}
 
 	public void BeAttack (float damAttack)

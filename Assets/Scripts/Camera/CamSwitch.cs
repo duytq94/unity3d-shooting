@@ -18,12 +18,23 @@ public class CamSwitch : MonoBehaviour
 
 	void Update ()
 	{
+		// For mouse click
 		if (Input.GetButtonDown ("Fire2")) {
 			if (camKnight.isActiveAndEnabled) {
 				CamAirCraftActive ();
 			} else {
 				CamKnightActive ();
 			}
+		}
+	}
+
+	public void SwitchPlayerButtonClick ()
+	{
+		// For touch on mobile
+		if (camKnight.isActiveAndEnabled) {
+			CamAirCraftActive ();
+		} else {
+			CamKnightActive ();
 		}
 	}
 

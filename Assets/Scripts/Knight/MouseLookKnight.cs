@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamMouseLockKnight : MonoBehaviour
+public class MouseLookKnight : MonoBehaviour
 {
 	Vector2 mouseLook;
 	Vector2 smoothV;

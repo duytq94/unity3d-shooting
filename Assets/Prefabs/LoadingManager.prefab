@@ -53,5 +53,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingScreen: {fileID: 0}
   sliderLoading: {fileID: 0}
-  sliderVolume: {fileID: 0}
   progressText: {fileID: 0}

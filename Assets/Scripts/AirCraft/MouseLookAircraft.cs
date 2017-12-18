@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CamMouseLook : MonoBehaviour
+public class MouseLookAircraft : MonoBehaviour
 {
 
 	Vector2 mouseLook;

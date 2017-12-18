@@ -19,6 +19,9 @@ TagManager:
   - QuantityAlive
   - QuantityDead
   - Missile
+  - AudioManager
+  - AttackButton
+  - SwitchPlayerButton
   layers:
   - Default
   - TransparentFX
