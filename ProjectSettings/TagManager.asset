@@ -22,6 +22,7 @@ TagManager:
   - AudioManager
   - AttackButton
   - SwitchPlayerButton
+  - RunFastButton
   layers:
   - Default
   - TransparentFX

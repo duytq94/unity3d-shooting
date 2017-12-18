@@ -10,11 +10,14 @@ public class KnightController : MonoBehaviour
 	public float originSpeed = 5f;
 	public float maxSpeed = 15f;
 
+	public VirtualJoystick joystick;
+
 	private GameObject knightCamera;
 	private Slider healthbar;
 	private Animator animator;
 	private bool isAllive = true;
 	private float currentSpeed;
+
 	private Button attackButton;
 
 	// Use this for initialization
@@ -39,14 +42,10 @@ public class KnightController : MonoBehaviour
 		}
 
 		if (knightCamera.GetComponent<Camera> ().isActiveAndEnabled) {
-			if (currentSpeed < maxSpeed && Input.GetKey ("w")) {
-				currentSpeed += 0.2f;
-			} 
-			if (Input.GetKeyUp ("w")) {
-				currentSpeed = originSpeed;
-			}
-			float translation = Input.GetAxis ("Vertical") * currentSpeed;
-			float straffe = Input.GetAxis ("Horizontal") * currentSpeed;
+
+			float translation = joystick.Vertical () * currentSpeed;
+			float straffe = joystick.Horizontal () * currentSpeed;
+
 			translation *= Time.deltaTime;
 			straffe *= Time.deltaTime;
 
@@ -69,6 +68,18 @@ public class KnightController : MonoBehaviour
 			StartCoroutine (SetFalseAnimation ("isAttacking", 0.8f));
 			FindObjectOfType<AudioManager> ().PlayDelayed ("Slash", 0.2f);
 		}
+	}
+
+	public void OnBtnFastHold ()
+	{
+		currentSpeed = maxSpeed;
+		print ("hold");
+	}
+
+	public void onBtnFastRelease ()
+	{
+		currentSpeed = originSpeed;
+		print ("release");
 	}
 
 	IEnumerator SetFalseAnimation (string name, float time)
