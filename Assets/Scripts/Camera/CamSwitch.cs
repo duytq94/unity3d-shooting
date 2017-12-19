@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CamSwitch : MonoBehaviour
 {
@@ -13,12 +14,15 @@ public class CamSwitch : MonoBehaviour
 	private Camera camKnight;
 	private Camera camAirCraft;
 	private GameObject crosshair;
+	private Button switchPlayerButton;
 
 	void Start ()
 	{
 		crosshair = GameObject.FindGameObjectWithTag ("GUI").transform.GetChild (0).gameObject;
 		camKnight = GameObject.FindGameObjectWithTag ("KnightCamera").GetComponent<Camera> ();
 		camAirCraft = GameObject.FindGameObjectWithTag ("AircraftCamera").GetComponent<Camera> ();
+		switchPlayerButton = GameObject.FindGameObjectWithTag ("SwitchPlayerButton").GetComponent<Button> ();
+		switchPlayerButton.onClick.AddListener (SwitchPlayerButtonClick);
 	}
 
 	public void SwitchPlayerButtonClick ()

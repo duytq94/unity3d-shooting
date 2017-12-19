@@ -1871,6 +1871,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 582524670}
   m_GameObject: {fileID: 39732907}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!114 &45068096 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114501148198765526, guid: b76740da517facd419f6e8348f16d4a7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1690264758}
+  m_Script: {fileID: 11500000, guid: 0793adda5f923e14591dc4b285f68671, type: 3}
 --- !u!1 &46002370
 GameObject:
   m_ObjectHideFlags: 0
@@ -13395,22 +13401,22 @@ Prefab:
         type: 2}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 759881696}
+      objectReference: {fileID: 45068096}
     - target: {fileID: 114495906135419550, guid: 105b4be041f082e4297ee8d70443d46a,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 759881696}
+      objectReference: {fileID: 45068096}
     - target: {fileID: 114735218329541264, guid: 105b4be041f082e4297ee8d70443d46a,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 759881696}
+      objectReference: {fileID: 45068096}
     - target: {fileID: 114924254020058212, guid: 105b4be041f082e4297ee8d70443d46a,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 759881696}
+      objectReference: {fileID: 45068096}
     - target: {fileID: 1519133192760870, guid: 105b4be041f082e4297ee8d70443d46a, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -13439,6 +13445,26 @@ Prefab:
         type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114735218329541264, guid: 105b4be041f082e4297ee8d70443d46a,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetResolution
+      objectReference: {fileID: 0}
+    - target: {fileID: 114287868360263916, guid: 105b4be041f082e4297ee8d70443d46a,
+        type: 2}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetFullScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114495906135419550, guid: 105b4be041f082e4297ee8d70443d46a,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetQuality
+      objectReference: {fileID: 0}
+    - target: {fileID: 114924254020058212, guid: 105b4be041f082e4297ee8d70443d46a,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 105b4be041f082e4297ee8d70443d46a, type: 2}
@@ -33802,12 +33828,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 582524670}
   m_GameObject: {fileID: 759577976}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
---- !u!114 &759881696 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114197903198251622, guid: b76740da517facd419f6e8348f16d4a7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1690264758}
-  m_Script: {fileID: 11500000, guid: 0793adda5f923e14591dc4b285f68671, type: 3}
 --- !u!1 &761681430
 GameObject:
   m_ObjectHideFlags: 0
@@ -87515,6 +87535,16 @@ Prefab:
       value: 
       objectReference: {fileID: 312940109}
     - target: {fileID: 114197903198251622, guid: b76740da517facd419f6e8348f16d4a7,
+        type: 2}
+      propertyPath: sliderVolume
+      value: 
+      objectReference: {fileID: 312940110}
+    - target: {fileID: 114501148198765526, guid: b76740da517facd419f6e8348f16d4a7,
+        type: 2}
+      propertyPath: resDropdown
+      value: 
+      objectReference: {fileID: 312940109}
+    - target: {fileID: 114501148198765526, guid: b76740da517facd419f6e8348f16d4a7,
         type: 2}
       propertyPath: sliderVolume
       value: 
