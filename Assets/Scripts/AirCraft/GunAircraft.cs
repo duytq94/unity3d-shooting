@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GunAircraft : MonoBehaviour
 {
@@ -15,41 +16,51 @@ public class GunAircraft : MonoBehaviour
 	public GameObject aircraft;
 	public GameObject missileModel;
 
+	public Button missileButton;
+	public Button gunButton;
+
 	public Camera[] cams;
 
 	private float timeTempGun;
 	private float timeTempMissile;
 	private bool click;
 
+	void Start ()
+	{
+		missileButton.onClick.AddListener (OnMissileButtonClick);
+	}
+
 	void Update ()
 	{
 		if (GetComponent<Camera> ().isActiveAndEnabled) {
-			if (Input.GetButtonDown ("Fire1")) {
-				timeTempGun = Time.time;
-				click = true;
-			}
-
-			// Missile
-			if (Input.GetKeyDown ("space") && (Time.time - timeTempMissile > 0.5)) {
-				FindObjectOfType<AudioManager> ().PlayCountinuous ("MissileFire");
-				timeTempMissile = Time.time;
-				ShootMissile ();
-			}
-
-			// Long click
 			if (click && (Time.time - timeTempGun) > 0.2) {
 				FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
 				ShootGun ();
 			}
+		}
+	}
 
-			// Short click
-			if (Input.GetButtonUp ("Fire1")) {
-				click = false;
-				if ((Time.time - timeTempGun) < 0.2) {
-					FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
-					ShootGun ();
-				}
-			}
+	public void OnGunButtonHold ()
+	{
+		timeTempGun = Time.time;
+		click = true;
+	}
+
+	public void OnGunButtonRelease ()
+	{
+		click = false;
+		if ((Time.time - timeTempGun) < 0.2) {
+			FindObjectOfType<AudioManager> ().PlayCountinuous ("ShotHandGun");
+			ShootGun ();
+		}
+	}
+
+	public void OnMissileButtonClick ()
+	{
+		if (Time.time - timeTempMissile > 0.5) {
+			FindObjectOfType<AudioManager> ().PlayCountinuous ("MissileFire");
+			timeTempMissile = Time.time;
+			ShootMissile ();
 		}
 	}
 

@@ -6,18 +6,21 @@ public class AircraftController : MonoBehaviour
 {
 
 	public float speed = 10f;
+
 	private GameObject camera;
+	private VirtualJoystick joystick;
 
 	void Start ()
 	{
 		camera = transform.GetChild (0).gameObject;	
+		joystick = GameObject.FindGameObjectWithTag ("Joystick").GetComponent<VirtualJoystick> ();
 	}
 
 	void Update ()
 	{
 		if (camera.GetComponent<Camera> ().isActiveAndEnabled) {
-			float translation = Input.GetAxis ("Vertical") * speed;
-			float straffe = Input.GetAxis ("Horizontal") * speed;
+			float translation = joystick.Vertical () * speed;
+			float straffe = joystick.Horizontal () * speed;
 
 			translation *= Time.deltaTime;
 			straffe *= Time.deltaTime;

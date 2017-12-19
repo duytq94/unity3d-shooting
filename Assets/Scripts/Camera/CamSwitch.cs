@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class CamSwitch : MonoBehaviour
 {
+	public GameObject attackButton;
+	public GameObject runfastButton;
+	public GameObject missileButton;
+	public GameObject gunButton;
+
 	private Camera camKnight;
 	private Camera camAirCraft;
 	private GameObject crosshair;
@@ -16,21 +21,8 @@ public class CamSwitch : MonoBehaviour
 		camAirCraft = GameObject.FindGameObjectWithTag ("AircraftCamera").GetComponent<Camera> ();
 	}
 
-	void Update ()
-	{
-		// For mouse click
-		if (Input.GetButtonDown ("Fire2")) {
-			if (camKnight.isActiveAndEnabled) {
-				CamAirCraftActive ();
-			} else {
-				CamKnightActive ();
-			}
-		}
-	}
-
 	public void SwitchPlayerButtonClick ()
 	{
-		// For touch on mobile
 		if (camKnight.isActiveAndEnabled) {
 			CamAirCraftActive ();
 		} else {
@@ -51,6 +43,10 @@ public class CamSwitch : MonoBehaviour
 			FindObjectOfType<AudioManager> ().Pause ("Helicopter");
 		}
 
+		attackButton.SetActive (true);
+		runfastButton.SetActive (true);
+		gunButton.SetActive (false);
+		missileButton.SetActive (false);
 
 		crosshair.SetActive (false);
 	}
@@ -67,6 +63,11 @@ public class CamSwitch : MonoBehaviour
 			FindObjectOfType<AudioManager> ().Pause ("Cemetery");
 			FindObjectOfType<AudioManager> ().Play ("Helicopter");
 		}
+
+		attackButton.SetActive (false);
+		runfastButton.SetActive (false);
+		gunButton.SetActive (true);
+		missileButton.SetActive (true);
 
 		crosshair.SetActive (true);
 	}

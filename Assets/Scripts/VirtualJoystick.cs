@@ -23,11 +23,11 @@ public class VirtualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 			pos.x = (pos.x / wrapperJoystick.rectTransform.sizeDelta.x);
 			pos.y = (pos.y / wrapperJoystick.rectTransform.sizeDelta.y);
 
-			inputVector = new Vector3 (pos.x * 2 + 1, 0, pos.y * 2 - 1);
+			inputVector = new Vector3 (pos.x * 2, 0, pos.y * 2);
 			inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
 
 			// Move joystick
-			joystick.rectTransform.anchoredPosition3D = new Vector3 (inputVector.x * (wrapperJoystick.rectTransform.sizeDelta.x / 3), 
+			joystick.rectTransform.anchoredPosition = new Vector3 (inputVector.x * (wrapperJoystick.rectTransform.sizeDelta.x / 3), 
 				inputVector.z * (wrapperJoystick.rectTransform.sizeDelta.y / 2));
 		}
 	}
@@ -35,7 +35,7 @@ public class VirtualJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, I
 	public virtual void OnPointerUp (PointerEventData ped)
 	{
 		inputVector = Vector3.zero;
-		joystick.rectTransform.anchoredPosition3D = Vector3.zero;
+		joystick.rectTransform.anchoredPosition = Vector3.zero;
 	}
 
 	public virtual void OnPointerDown (PointerEventData ped)

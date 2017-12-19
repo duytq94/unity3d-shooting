@@ -23,6 +23,10 @@ TagManager:
   - AttackButton
   - SwitchPlayerButton
   - RunFastButton
+  - BloodyScreen
+  - Joystick
+  - MissileButton
+  - GunButton
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,7 @@ public class KnightController : MonoBehaviour
 	public float health = 100f;
 	public float originSpeed = 5f;
 	public float maxSpeed = 15f;
-
-	public VirtualJoystick joystick;
+	public Button attackButton;
 
 	private GameObject knightCamera;
 	private Slider healthbar;
@@ -18,9 +17,9 @@ public class KnightController : MonoBehaviour
 	private bool isAllive = true;
 	private float currentSpeed;
 
-	private Button attackButton;
+	private Image bloodyScreen;
+	private VirtualJoystick joystick;
 
-	// Use this for initialization
 	void Start ()
 	{
 		healthbar = GameObject.FindGameObjectWithTag ("HealthBar").GetComponent<Slider> ();
@@ -30,11 +29,12 @@ public class KnightController : MonoBehaviour
 		animator = GetComponent<Animator> ();
 		currentSpeed = originSpeed;
 
-		attackButton = GameObject.FindGameObjectWithTag ("AttackButton").GetComponent<Button> ();
 		attackButton.onClick.AddListener (ProcessAttack);
-	}
 
-	// Update is called once per frame
+		bloodyScreen = GameObject.FindGameObjectWithTag ("BloodyScreen").GetComponent<Image> ();
+		joystick = GameObject.FindGameObjectWithTag ("Joystick").GetComponent<VirtualJoystick> ();
+	}
+		
 	void Update ()
 	{
 		if (health <= 0) {
@@ -73,13 +73,11 @@ public class KnightController : MonoBehaviour
 	public void OnBtnFastHold ()
 	{
 		currentSpeed = maxSpeed;
-		print ("hold");
 	}
 
-	public void onBtnFastRelease ()
+	public void OnBtnFastRelease ()
 	{
 		currentSpeed = originSpeed;
-		print ("release");
 	}
 
 	IEnumerator SetFalseAnimation (string name, float time)
@@ -93,6 +91,10 @@ public class KnightController : MonoBehaviour
 		health -= damAttack;
 		healthbar.value = health / 100f;
 		animator.SetBool ("isDamage", true);
+
+		bloodyScreen.enabled = true;
+		StartCoroutine (DisableBloodyScreen (2f));
+
 		if (health <= 0) {
 			animator.SetBool ("isDead", true);
 			isAllive = false;
@@ -107,5 +109,11 @@ public class KnightController : MonoBehaviour
 	public bool GetIsAllive ()
 	{
 		return isAllive;
+	}
+
+	IEnumerator DisableBloodyScreen (float time)
+	{
+		yield return new WaitForSeconds (time);
+		bloodyScreen.enabled = false;
 	}
 }
